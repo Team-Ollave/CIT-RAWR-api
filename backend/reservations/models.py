@@ -49,7 +49,7 @@ class Reservation(models.Model):
     date_registered = models.DateTimeField(auto_now_add=True)
 
     event_description = models.CharField(max_length=MEDIUM_TEXT_MAX_LENGTH)
-    attendees_count = models.PositiveIntegerField()
+    attendees_count = models.PositiveIntegerField(default=0)
 
     is_accepted_department = models.BooleanField(default=False)
     is_accepted_imdc = models.BooleanField(default=False)
