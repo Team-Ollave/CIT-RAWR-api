@@ -1,6 +1,7 @@
 from django.db.models import TextChoices
 
 
-class Sex(TextChoices):
-    MALE = ("M", "Student")
-    FEMALE = ("F", "Teacher")
+class ReservationStatus(TextChoices):
+    ACCEPTED = ("A", "Accepted")
+    PENDING = ("P", "Pending")
+    DECLINED = ("D", "Declined")

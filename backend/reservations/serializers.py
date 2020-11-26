@@ -1,9 +1,27 @@
 from rest_framework import serializers
 
-from .models import Person
+from backend.reservations import models
 
 
-class PersonModelSerializer(serializers.ModelSerializer):
+class BuildingSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Person
-        fields = ("id", "first_name", "last_name", "sex")
+        model = models.Building
+        fields = "__all__"
+
+
+class RoomCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.RoomCategory
+        fields = "__all__"
+
+
+class RoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Room
+        fields = "__all__"
+
+
+class ReservationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Reservation
+        fields = "__all__"

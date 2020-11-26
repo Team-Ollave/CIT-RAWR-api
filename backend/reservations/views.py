@@ -1,10 +1,9 @@
 from rest_framework import mixins, viewsets
 
-from .models import Person
-from .serializers import PersonModelSerializer
+from backend.reservations import models, serializers
 
 
-class PersonViewSet(
+class BuildingViewSet(
     mixins.CreateModelMixin,
     mixins.ListModelMixin,
     mixins.RetrieveModelMixin,
@@ -13,5 +12,31 @@ class PersonViewSet(
     viewsets.GenericViewSet,
 ):
 
-    queryset = Person.objects.all()
-    serializer_class = PersonModelSerializer
+    queryset = models.Building.objects
+    serializer_class = serializers.BuildingSerializer
+
+
+class RoomViewSet(
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.DestroyModelMixin,
+    viewsets.GenericViewSet,
+):
+
+    queryset = models.Room.objects
+    serializer_class = serializers.RoomSerializer
+
+
+class ReservationViewSet(
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.DestroyModelMixin,
+    viewsets.GenericViewSet,
+):
+
+    queryset = models.Reservation.objects
+    serializer_class = serializers.ReservationSerializer
