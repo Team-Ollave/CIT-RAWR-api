@@ -1,5 +1,4 @@
 from rest_framework import mixins, viewsets
-from rest_framework.response import Response
 
 from backend.reservations import models, serializers
 
@@ -14,7 +13,7 @@ class BuildingViewSet(
 ):
 
     queryset = models.Building.objects
-    serializer_class = serializers.BuildingSerializer
+    serializer_class = serializers.BuildingModelSerializer
 
 
 class RoomViewSet(
@@ -27,7 +26,7 @@ class RoomViewSet(
 ):
 
     queryset = models.Room.objects
-    serializer_class = serializers.RoomSerializer
+    serializer_class = serializers.RoomModelSerializer
 
 
 class ReservationViewSet(
@@ -40,15 +39,4 @@ class ReservationViewSet(
 ):
 
     queryset = models.Reservation.objects
-    serializer_class = serializers.ReservationSerializer
-
-    def create(self, *args, **kwargs):
-
-        serializer = serializers.CreateReservationRequestSerializers(
-            data=self.request.data
-        )
-        serializer.is_valid(raise_exception=True)
-
-        super().create(*args, **kwargs)
-
-        return Response(serializers.ReservationSerializer(serializer.data).data)
+    serializer_class = serializers.ReservationModelSerializer

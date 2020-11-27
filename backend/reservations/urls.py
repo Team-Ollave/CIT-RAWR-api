@@ -6,7 +6,7 @@ from backend.reservations import views
 
 ROUTER = DefaultRouter()
 
-ROUTER.register("buildings", views.ReservationViewSet)
+ROUTER.register("buildings", views.BuildingViewSet)
 ROUTER.register("reservations", views.ReservationViewSet)
 ROUTER.register("rooms", views.RoomViewSet)
 
