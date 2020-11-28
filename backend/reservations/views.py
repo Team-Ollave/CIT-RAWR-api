@@ -100,3 +100,14 @@ class RoomImageViewSet(
 ):
     queryset = models.RoomImage.objects.all()
     serializer_class = serializers.RoomImageModelSerializere
+
+
+class RoomCategoryViewSet(
+    mixins.CreateModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.ListModelMixin,
+    viewsets.GenericViewSet,
+):
+    queryset = models.RoomCategory.objects
+    serializer_class = serializers.RoomCategoryModelSerializer
