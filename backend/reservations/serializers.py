@@ -4,7 +4,7 @@ from django.core import exceptions
 from django.db.models import Q
 from rest_framework import serializers
 
-from backend.reservations import models
+from backend.reservations import choices, models
 
 
 class BuildingModelSerializer(serializers.ModelSerializer):
@@ -84,3 +84,12 @@ class ReservationQuerySerializer(serializers.Serializer):
     upcoming = serializers.BooleanField(required=False)
     today = serializers.BooleanField(required=False, allow_null=True, default=None)
     past = serializers.BooleanField(required=False)
+    status = serializers.CharField(required=False)
+
+    def validate(self, attrs):
+        if (
+            status := attrs.get("status")
+        ) and status not in choices.ReservationStatus.values:
+            raise serializers.ValidationError("status value is invalid,")
+
+        return attrs

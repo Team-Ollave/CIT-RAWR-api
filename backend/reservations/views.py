@@ -2,7 +2,7 @@ import datetime
 
 from rest_framework import mixins, viewsets
 
-from backend.reservations import models, serializers
+from backend.reservations import choices, models, serializers
 
 
 class BuildingViewSet(
@@ -49,7 +49,7 @@ class ReservationViewSet(
         )
 
         queryset = self.queryset
-        if not serializer.is_valid():
+        if not serializer.is_valid(raise_exception=True):
             return queryset.all()
 
         if date := serializer.validated_data.get("date"):
@@ -67,6 +67,14 @@ class ReservationViewSet(
 
         if serializer.validated_data.get("past"):
             queryset = queryset.filter(event_date__lt=date_today)
+
+        if status := serializer.validated_data.get("status"):
+            if status == choices.ReservationStatus.ACCEPTED:
+                queryset = queryset.accepted()
+            elif status == choices.ReservationStatus.DECLINED:
+                queryset = queryset.declined()
+            else:
+                queryset = queryset.pending()
 
         return queryset.all()
 
