@@ -25,7 +25,7 @@ class UserViewSet(
         username = serializer.validated_data.get("email")
         password = serializer.validated_data.get("password")
 
-        if authenticate(username=username, password=password):
-            return Response(status=status.HTTP_200_OK)
+        if user := authenticate(username=username, password=password):
+            return Response(UserModelSerializer(user).data, status=status.HTTP_200_OK)
 
         return Response(status=status.HTTP_401_UNAUTHORIZED)
