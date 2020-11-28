@@ -98,7 +98,7 @@ class ReservationQuerySerializer(serializers.Serializer):
         if (
             status := attrs.get("status")
         ) and status not in choices.ReservationStatus.values:
-            raise serializers.ValidationError("status value is invalid,")
+            raise serializers.ValidationError("status value is invalid.")
 
         return attrs
 

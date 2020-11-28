@@ -4,7 +4,11 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 
 from .models import User
-from .serializers import LoginRequestSerializer, UserModelSerializer
+from .serializers import (
+    LoginRequestSerializer,
+    UserModelSerializer,
+    UserQuerySerializer,
+)
 
 
 class UserViewSet(
@@ -16,6 +20,18 @@ class UserViewSet(
 
     queryset = User.objects.all()
     serializer_class = UserModelSerializer
+
+    def get_queryset(self):
+        serializer = UserQuerySerializer(data=self.request.query_params)
+
+        queryset = self.queryset
+        if not serializer.is_valid(raise_exception=True):
+            return queryset.all()
+
+        if user_type := serializer.validated_data.get("user_type"):
+            queryset = queryset.filter(user_type=user_type)
+
+        return queryset.all()
 
     @action(methods=["POST"], detail=False)
     def login(self, request):
