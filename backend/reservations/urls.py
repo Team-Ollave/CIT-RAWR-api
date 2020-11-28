@@ -10,5 +10,6 @@ ROUTER.register("buildings", views.BuildingViewSet)
 ROUTER.register("reservations", views.ReservationViewSet)
 ROUTER.register("rooms", views.RoomViewSet)
 ROUTER.register("room-images", views.RoomImageViewSet)
+ROUTER.register("room-categories", views.RoomCategoryViewSet)
 
 urlpatterns = path("", include(ROUTER.urls))
