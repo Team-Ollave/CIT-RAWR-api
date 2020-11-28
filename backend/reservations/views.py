@@ -30,6 +30,18 @@ class RoomViewSet(
     queryset = models.Room.objects
     serializer_class = serializers.RoomModelSerializer
 
+    def get_queryset(self):
+        serializer = serializers.RoomsQuerySerializer(data=self.request.query_params)
+
+        queryset = self.queryset
+        if not serializer.is_valid(raise_exception=True):
+            return queryset.all()
+
+        if building_id := serializer.validated_data.get("building_id"):
+            queryset = queryset.filter(building=building_id)
+
+        return queryset.all()
+
 
 class ReservationViewSet(
     mixins.CreateModelMixin,

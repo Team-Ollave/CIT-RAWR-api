@@ -93,3 +93,7 @@ class ReservationQuerySerializer(serializers.Serializer):
             raise serializers.ValidationError("status value is invalid,")
 
         return attrs
+
+
+class RoomsQuerySerializer(serializers.Serializer):
+    building_id = serializers.IntegerField(required=False)
