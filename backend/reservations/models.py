@@ -8,7 +8,9 @@ from backend.users.models import User
 
 class Building(models.Model):
     name = models.CharField(max_length=DEFAULT_MAX_LENGTH)
-    location = models.CharField(max_length=MEDIUM_TEXT_MAX_LENGTH)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    description = models.CharField(max_length=MEDIUM_TEXT_MAX_LENGTH)
 
     def __str__(self):
         return f"{self.name}"
