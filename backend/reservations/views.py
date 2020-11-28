@@ -69,3 +69,14 @@ class ReservationViewSet(
             queryset = queryset.filter(event_date__lt=date_today)
 
         return queryset.all()
+
+
+class RoomImageViewSet(
+    mixins.CreateModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.ListModelMixin,
+    viewsets.GenericViewSet,
+):
+    queryset = models.RoomImage.objects.all()
+    serializer_class = serializers.RoomImageModelSerializere

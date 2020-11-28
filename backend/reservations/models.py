@@ -43,6 +43,14 @@ class Room(models.Model):
         return f"{self.id} - {self.building} - {self.name}"
 
 
+class RoomImage(models.Model):
+    image = models.ImageField(upload_to="images/room/")
+    room = models.ForeignKey(Room, on_delete=models.CASCADE)
+
+    class Meta:
+        default_related_name = "room_images"
+
+
 class Reservation(models.Model):
     event_date = models.DateField()
     start_time = models.TimeField()

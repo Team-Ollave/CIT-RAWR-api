@@ -19,7 +19,15 @@ class RoomCategoryModelSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class RoomImageModelSerializere(serializers.ModelSerializer):
+    class Meta:
+        model = models.RoomImage
+        fields = "__all__"
+
+
 class RoomModelSerializer(serializers.ModelSerializer):
+    room_images = RoomImageModelSerializere(many=True, read_only=True)
+
     class Meta:
         model = models.Room
         fields = "__all__"

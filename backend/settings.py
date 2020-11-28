@@ -131,3 +131,11 @@ STATIC_URL = "/static/"
 AUTH_USER_MODEL = "users.User"
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
+
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+MEDIA_ROOT = "media/"
+MEDIA_URL = "/media/"

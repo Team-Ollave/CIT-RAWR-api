@@ -9,5 +9,6 @@ ROUTER = DefaultRouter()
 ROUTER.register("buildings", views.BuildingViewSet)
 ROUTER.register("reservations", views.ReservationViewSet)
 ROUTER.register("rooms", views.RoomViewSet)
+ROUTER.register("room-images", views.RoomImageViewSet)
 
 urlpatterns = path("", include(ROUTER.urls))
