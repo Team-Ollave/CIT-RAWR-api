@@ -81,9 +81,26 @@ class Reservation(models.Model):
 
         return ReservationStatus.PENDING
 
+    @property
     def is_accepted(self) -> bool:
         return (
             self.is_accepted_department
             and self.is_accepted_imdc
             and self.is_accepted_president
+        )
+
+    @property
+    def is_pending(self) -> bool:
+        return (
+            self.is_accepted_department is None
+            or self.is_accepted_imdc is None
+            or self.is_accepted_president is None
+        )
+
+    @property
+    def is_declined(self) -> bool:
+        return (
+            self.is_accepted_department is False
+            or self.is_accepted_imdc is False
+            or self.is_accepted_president is False
         )

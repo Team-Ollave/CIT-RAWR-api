@@ -1,4 +1,4 @@
-from django.db.models import QuerySet
+from django.db.models import Q, QuerySet
 
 
 class ReservationQuerySet(QuerySet):
@@ -7,4 +7,18 @@ class ReservationQuerySet(QuerySet):
             is_accepted_department=True,
             is_accepted_imdc=True,
             is_accepted_president=True,
+        )
+
+    def pending(self):
+        return self.filter(
+            Q(is_accepted_department=None)
+            | Q(is_accepted_imdc=None)
+            | Q(is_accepted_president=None)
+        )
+
+    def declined(self):
+        return self.filter(
+            Q(is_accepted_department=False)
+            | Q(is_accepted_imdc=False)
+            | Q(is_accepted_president=False)
         )
