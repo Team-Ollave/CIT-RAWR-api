@@ -40,6 +40,14 @@ class RoomViewSet(
         if building_id := serializer.validated_data.get("building_id"):
             queryset = queryset.filter(building=building_id)
 
+        if (
+            has_reservations := serializer.validated_data.get("has_reservations")
+        ) is not None:
+            if has_reservations:
+                queryset = queryset.exclude(reservations=None)
+            else:
+                queryset = queryset.filter(reservations=None)
+
         return queryset.all()
 
 

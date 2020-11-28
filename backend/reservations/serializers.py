@@ -25,17 +25,9 @@ class RoomImageModelSerializere(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class RoomModelSerializer(serializers.ModelSerializer):
-    room_images = RoomImageModelSerializere(many=True, read_only=True)
-    is_generic = serializers.ReadOnlyField()
-
-    class Meta:
-        model = models.Room
-        fields = "__all__"
-
-
 class ReservationModelSerializer(serializers.ModelSerializer):
     status = serializers.ReadOnlyField()
+    event_organizer_name = serializers.SerializerMethodField()
 
     class Meta:
         model = models.Reservation
@@ -46,12 +38,18 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             "is_accepted_president": {"default": None},
         }
 
+    def get_event_organizer_name(self, obj):
+        try:
+            return obj.requestor.profile.display_name
+        except Exception:
+            return "Anonymous"
+
     def validate(self, attrs):
         start_time = attrs.get("start_time")
         end_time = attrs.get("end_time")
         event_date = attrs.get("event_date")
 
-        if event_date < datetime.date.today():
+        if event_date and event_date < datetime.date.today():
             raise exceptions.ValidationError("Date already has passed")
 
         if (event_date and start_time) and end_time < start_time:
@@ -80,6 +78,15 @@ class ReservationModelSerializer(serializers.ModelSerializer):
         return attrs
 
 
+class RoomModelSerializer(serializers.ModelSerializer):
+    room_images = RoomImageModelSerializere(many=True, read_only=True)
+    is_generic = serializers.ReadOnlyField()
+
+    class Meta:
+        model = models.Room
+        fields = "__all__"
+
+
 class ReservationQuerySerializer(serializers.Serializer):
     date = serializers.DateField(required=False)
     upcoming = serializers.BooleanField(required=False)
@@ -98,3 +105,6 @@ class ReservationQuerySerializer(serializers.Serializer):
 
 class RoomsQuerySerializer(serializers.Serializer):
     building_id = serializers.IntegerField(required=False)
+    has_reservations = serializers.BooleanField(
+        required=False, allow_null=True, default=None
+    )

@@ -55,6 +55,7 @@ class RoomImage(models.Model):
 
 
 class Reservation(models.Model):
+    event_name = models.CharField(max_length=DEFAULT_MAX_LENGTH)
     event_date = models.DateField()
     start_time = models.TimeField()
     end_time = models.TimeField()
@@ -71,6 +72,9 @@ class Reservation(models.Model):
     requestor = models.ForeignKey(User, on_delete=models.CASCADE)
 
     objects = ReservationQuerySet.as_manager()
+
+    class Meta:
+        default_related_name = "reservations"
 
     def __str__(self):
         return f"{self.id} - {self.requestor}"
