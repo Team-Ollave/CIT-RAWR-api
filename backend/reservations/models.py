@@ -52,14 +52,9 @@ class Reservation(models.Model):
     event_description = models.CharField(max_length=MEDIUM_TEXT_MAX_LENGTH)
     attendees_count = models.PositiveIntegerField(default=0)
 
-    is_accepted_department = models.BooleanField(default=False)
-    is_accepted_imdc = models.BooleanField(default=False)
-    is_accepted_president = models.BooleanField(default=False)
-    status = models.CharField(
-        max_length=1,
-        choices=ReservationStatus.choices,
-        default=ReservationStatus.PENDING,
-    )
+    is_accepted_department = models.BooleanField(null=True, default=None)
+    is_accepted_imdc = models.BooleanField(null=True, default=None)
+    is_accepted_president = models.BooleanField(null=True, default=None)
 
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
     requestor = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -69,7 +64,24 @@ class Reservation(models.Model):
     def __str__(self):
         return f"{self.id} - {self.requestor}"
 
-    def is_accepted(self):
+    @property
+    def status(self) -> str:
+        if (
+            self.is_accepted_department
+            and self.is_accepted_imdc
+            and self.is_accepted_president
+        ):
+            return ReservationStatus.ACCEPTED
+        elif (
+            self.is_accepted_department is False
+            or self.is_accepted_imdc is False
+            or self.is_accepted_president is False
+        ):
+            return ReservationStatus.DECLINED
+
+        return ReservationStatus.PENDING
+
+    def is_accepted(self) -> bool:
         return (
             self.is_accepted_department
             and self.is_accepted_imdc

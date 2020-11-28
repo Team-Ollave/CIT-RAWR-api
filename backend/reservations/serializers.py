@@ -26,23 +26,31 @@ class RoomModelSerializer(serializers.ModelSerializer):
 
 
 class ReservationModelSerializer(serializers.ModelSerializer):
+    status = serializers.ReadOnlyField()
+
     class Meta:
         model = models.Reservation
         exclude = ("date_registered",)
+        extra_kwargs = {
+            "is_accepted_department": {"default": None},
+            "is_accepted_imdc": {"default": None},
+            "is_accepted_president": {"default": None},
+        }
 
     def validate(self, attrs):
         start_time = attrs.get("start_time")
         end_time = attrs.get("end_time")
+        event_date = attrs.get("event_date")
 
-        if attrs.get("event_date") < datetime.date.today():
+        if event_date < datetime.date.today():
             raise exceptions.ValidationError("Date already has passed")
 
-        if end_time < start_time:
+        if (event_date and start_time) and end_time < start_time:
             raise exceptions.ValidationError("start_time must be before end_time.")
 
         try:
             room = attrs.get("room")
-            if (
+            if room and (
                 room.available_start_time > start_time
                 or end_time > room.available_end_time
             ):
