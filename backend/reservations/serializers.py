@@ -69,3 +69,10 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             raise exceptions.ValidationError("There's an event in the given time range")
 
         return attrs
+
+
+class ReservationQuerySerializer(serializers.Serializer):
+    date = serializers.DateField(required=False)
+    upcoming = serializers.BooleanField(required=False)
+    today = serializers.BooleanField(required=False, allow_null=True, default=None)
+    past = serializers.BooleanField(required=False)
