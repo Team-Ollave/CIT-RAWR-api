@@ -1,13 +1,21 @@
 from rest_framework import serializers
 
 from .choices import UserType
-from .models import User
+from .models import User, UserProfile
+
+
+class UserProfileModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = "__all__"
 
 
 class UserModelSerializer(serializers.ModelSerializer):
+    profile_data = UserProfileModelSerializer(read_only=True, source="profile")
+
     class Meta:
         model = User
-        fields = ("id", "email", "user_type", "profile")
+        fields = ("id", "email", "user_type", "profile", "profile_data")
 
 
 class LoginRequestSerializer(serializers.Serializer):
