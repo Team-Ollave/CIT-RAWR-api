@@ -36,6 +36,8 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             "is_accepted_department": {"default": None},
             "is_accepted_imdc": {"default": None},
             "is_accepted_president": {"default": None},
+            "start_time": {"format": "%H:%M"},
+            "end_time": {"format": "%H:%M"},
         }
 
     def get_event_organizer_name(self, obj):
