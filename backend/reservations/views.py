@@ -1,6 +1,8 @@
 import datetime
 
 from rest_framework import mixins, viewsets
+from rest_framework.decorators import action
+from rest_framework.response import Response
 
 from backend.reservations import choices, models, serializers
 
@@ -49,6 +51,36 @@ class RoomViewSet(
                 queryset = queryset.filter(reservations=None)
 
         return queryset.all()
+
+    @action(methods=["GET"], detail=True, url_path="earliest-availability")
+    def earliest_availability(self, request, pk):
+        room_reservations = (
+            models.Reservation.objects.from_room(pk)
+            .accepted()
+            .filter(event_date__gte=datetime.date.today())
+            .order_by("event_date", "start_time")
+        )
+
+        if room_reservations:
+            for i in range(len(room_reservations) - 1):
+                if room_reservations[i].event_date == room_reservations[i + 1].event_date:
+                    event_date = room_reservations[i].event_date
+                    if (
+                        datetime.datetime.combine(
+                            event_date, room_reservations[i + 1].start_time
+                        )
+                        - datetime.datetime.combine(
+                            event_date, room_reservations[i].end_time
+                        )
+                    ).total_seconds() > 0:
+                        return Response(
+                            serializers.EarliestAvailabilitySerializer(
+                                room_reservations[i].event_date
+                            ).data
+                        )
+            return Response(serializers.EarliestAvailabilitySerializer(event_date).data)
+        else:
+            pass
 
 
 class ReservationViewSet(

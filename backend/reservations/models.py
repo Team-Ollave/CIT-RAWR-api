@@ -38,6 +38,9 @@ class Room(models.Model):
 
     department = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
 
+    class Meta:
+        ordering = ("-building",)
+
     @property
     def is_generic(self):
         return self.room_category is not None

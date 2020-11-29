@@ -22,3 +22,6 @@ class ReservationQuerySet(QuerySet):
             | Q(is_accepted_imdc=False)
             | Q(is_accepted_president=False)
         )
+
+    def from_room(self, room_id):
+        return self.filter(room_id=room_id)

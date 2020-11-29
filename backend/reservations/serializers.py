@@ -117,3 +117,7 @@ class RoomsQuerySerializer(serializers.Serializer):
     has_reservations = serializers.BooleanField(
         required=False, allow_null=True, default=None
     )
+
+
+class EarliestAvailabilitySerializer(serializers.Serializer):
+    earliest_date = serializers.DateField()
