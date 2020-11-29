@@ -96,6 +96,20 @@ class ReservationViewSet(
             else:
                 queryset = queryset.pending()
 
+        if self.request.query_params.get("is_accepted_department") is not None:
+            is_accepted_department = serializer.validated_data.get(
+                "is_accepted_department"
+            )
+            queryset = queryset.filter(is_accepted_department=is_accepted_department)
+
+        if self.request.query_params.get("is_accepted_imdc") is not None:
+            is_accepted_imdc = serializer.validated_data.get("is_accepted_imdc")
+            queryset = queryset.filter(is_accepted_imdc=is_accepted_imdc)
+
+        if self.request.query_params.get("is_accepted_president") is not None:
+            is_accepted_president = serializer.validated_data.get("is_accepted_president")
+            queryset = queryset.filter(is_accepted_president=is_accepted_president)
+
         return queryset.all()
 
 

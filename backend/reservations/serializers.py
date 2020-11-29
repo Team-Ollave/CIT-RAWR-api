@@ -95,6 +95,13 @@ class ReservationQuerySerializer(serializers.Serializer):
     today = serializers.BooleanField(required=False, allow_null=True, default=None)
     past = serializers.BooleanField(required=False)
     status = serializers.CharField(required=False)
+    is_accepted_department = serializers.BooleanField(required=False, allow_null=True)
+    is_accepted_imdc = serializers.BooleanField(
+        required=False, allow_null=True, default=None
+    )
+    is_accepted_president = serializers.BooleanField(
+        required=False, allow_null=True, default=None
+    )
 
     def validate(self, attrs):
         if (
