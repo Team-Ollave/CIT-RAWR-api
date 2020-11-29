@@ -44,3 +44,6 @@ class ReservationQuerySet(QuerySet):
 
     def from_department(self, department_id: int):
         return self.filter(room__department_id=department_id)
+
+    def from_room(self, room_id: int):
+        return self.filter(room_id=room_id)
