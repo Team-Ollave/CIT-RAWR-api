@@ -1768,6 +1768,84 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2020-11-30T17:20:25.260Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - Accepted Today",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2020-11-30T17:21:23.760Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "14 - Accepted Today 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2020-11-30T17:21:37.054Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - Accepted Today",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"End time\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2020-11-30T17:22:28.949Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "15 - Accepted Tomorrow",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2020-11-30T17:23:10.815Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "16",
+    "object_repr": "16 - Accepted Other Day",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2020-11-30T17:23:38.750Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "17 - Accepted Other Day 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -2695,6 +2773,96 @@
     "is_accepted_imdc": true,
     "is_accepted_president": false,
     "room": 22,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 13,
+  "fields": {
+    "event_name": "Accepted Today",
+    "event_date": "2020-12-01",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T17:20:25.256Z",
+    "event_description": "This is Accepted Today Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 14,
+  "fields": {
+    "event_name": "Accepted Today 2",
+    "event_date": "2020-12-01",
+    "start_time": "13:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-11-30T17:21:23.759Z",
+    "event_description": "This is Accepted Today 2",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 3
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 15,
+  "fields": {
+    "event_name": "Accepted Tomorrow",
+    "event_date": "2020-12-02",
+    "start_time": "12:00:00",
+    "end_time": "14:00:00",
+    "date_registered": "2020-11-30T17:22:28.948Z",
+    "event_description": "This is Accepted Tomorrow Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 5
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 16,
+  "fields": {
+    "event_name": "Accepted Other Day",
+    "event_date": "2020-12-03",
+    "start_time": "12:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-11-30T17:23:10.813Z",
+    "event_description": "This is Accepted Other Day Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 17,
+  "fields": {
+    "event_name": "Accepted Other Day 2",
+    "event_date": "2020-12-03",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T17:23:38.748Z",
+    "event_description": "This is Accepted Other Day 2 Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
     "requestor": 7
   }
 },
