@@ -6,6 +6,7 @@ from rest_framework import serializers
 
 from backend.reservations import choices, models
 from backend.users.choices import UserType
+from backend.users.serializers import UserModelSerializer
 
 
 class BuildingModelSerializer(serializers.ModelSerializer):
@@ -26,9 +27,19 @@ class RoomImageModelSerializere(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class RoomModelSerializer(serializers.ModelSerializer):
+    room_images = RoomImageModelSerializere(many=True, read_only=True)
+    is_generic = serializers.ReadOnlyField()
+
+    class Meta:
+        model = models.Room
+        fields = "__all__"
+
+
 class ReservationModelSerializer(serializers.ModelSerializer):
     status = serializers.ReadOnlyField()
     event_organizer_name = serializers.SerializerMethodField()
+    requestor_data = UserModelSerializer(read_only=True, source="requestor")
 
     class Meta:
         model = models.Reservation
@@ -87,15 +98,6 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             raise exceptions.ValidationError("There's an event in the given time range")
 
         return attrs
-
-
-class RoomModelSerializer(serializers.ModelSerializer):
-    room_images = RoomImageModelSerializere(many=True, read_only=True)
-    is_generic = serializers.ReadOnlyField()
-
-    class Meta:
-        model = models.Room
-        fields = "__all__"
 
 
 class ReservationQuerySerializer(serializers.Serializer):
