@@ -103,6 +103,7 @@ class ReservationModelSerializer(serializers.ModelSerializer):
 class ReservationQuerySerializer(serializers.Serializer):
     department_id = serializers.IntegerField(required=False)
     for_user_type = serializers.CharField(required=False)
+    room = serializers.IntegerField(required=False)
 
     date = serializers.DateField(required=False)
     upcoming = serializers.BooleanField(required=False)
