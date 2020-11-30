@@ -5,8 +5,20 @@ from backend.users.choices import UserType
 
 class ReservationQuerySet(QuerySet):
     def accepted(self, for_user: str = UserType.PRESIDENT):
-        if for_user in (UserType.DEPARTMENT, UserType.IMDC):
-            return self.filter(is_accepted_department=True)
+
+        if for_user == UserType.DEPARTMENT:
+            return self.filter(
+                is_accepted_department=True,
+                is_accepted_imdc=None,
+                is_accepted_president=None,
+            )
+
+        if for_user == UserType.IMDC:
+            return self.filter(
+                is_accepted_department=True,
+                is_accepted_imdc=True,
+                is_accepted_president=None,
+            )
 
         return self.filter(
             is_accepted_department=True,
