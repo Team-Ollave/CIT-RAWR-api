@@ -45,6 +45,7 @@ class ReservationModelSerializer(serializers.ModelSerializer):
                 "format": "%H:%M",
                 "input_formats": ("%I:%M %p", "%H:%M"),
             },
+            "event_date": {"input_formats": ("%m-%d-%Y", "%Y-%m-%d")},
         }
 
     def get_event_organizer_name(self, obj):
