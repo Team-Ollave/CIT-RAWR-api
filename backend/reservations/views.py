@@ -1,9 +1,10 @@
 import datetime
 
-from rest_framework import mixins, viewsets
+from rest_framework import mixins, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
+from backend.constants import RESERVATION_MAX_HOURS
 from backend.reservations import choices, models, serializers
 
 
@@ -54,6 +55,11 @@ class RoomViewSet(
 
     @action(methods=["GET"], detail=True, url_path="earliest-availability")
     def earliest_availability(self, request, pk):
+        try:
+            models.Room.objects.get(id=pk)
+        except models.Room.DoesNotExist:
+            return Response("Room does not exist", status=status.HTTP_400_BAD_REQUEST)
+
         room_reservations = (
             models.Reservation.objects.from_room(pk)
             .accepted()
@@ -72,15 +78,13 @@ class RoomViewSet(
                         - datetime.datetime.combine(
                             event_date, room_reservations[i].end_time
                         )
-                    ).total_seconds() > 0:
-                        return Response(
-                            serializers.EarliestAvailabilitySerializer(
-                                room_reservations[i].event_date
-                            ).data
-                        )
-            return Response(serializers.EarliestAvailabilitySerializer(event_date).data)
+                    ).total_seconds() > RESERVATION_MAX_HOURS:
+                        return Response(event_date)
+            return Response(
+                room_reservations.last().event_date + datetime.timedelta(days=1)
+            )
         else:
-            pass
+            return Response(datetime.date.today())
 
 
 class ReservationViewSet(
