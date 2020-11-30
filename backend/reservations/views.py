@@ -111,6 +111,9 @@ class ReservationViewSet(
         if date := serializer.validated_data.get("date"):
             queryset = queryset.filter(event_date=date)
 
+        if room := serializer.validated_data.get("room"):
+            queryset = queryset.filter(room_id=room)
+
         date_today = datetime.date.today()
         if (today := serializer.validated_data.get("today")) is not None:
             if today:
