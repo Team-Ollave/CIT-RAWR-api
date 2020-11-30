@@ -5,6 +5,7 @@ from django.db.models import Q
 from rest_framework import serializers
 
 from backend.reservations import choices, models
+from backend.users.choices import UserType
 
 
 class BuildingModelSerializer(serializers.ModelSerializer):
@@ -90,6 +91,9 @@ class RoomModelSerializer(serializers.ModelSerializer):
 
 
 class ReservationQuerySerializer(serializers.Serializer):
+    department_id = serializers.IntegerField(required=False)
+    for_user_type = serializers.CharField(required=False)
+
     date = serializers.DateField(required=False)
     upcoming = serializers.BooleanField(required=False)
     today = serializers.BooleanField(required=False, allow_null=True, default=None)
@@ -108,6 +112,9 @@ class ReservationQuerySerializer(serializers.Serializer):
             status := attrs.get("status")
         ) and status not in choices.ReservationStatus.values:
             raise serializers.ValidationError("status value is invalid.")
+
+        if (user_type := attrs.get("for_user_type")) and user_type not in UserType.values:
+            raise serializers.ValidationError("for_user_type value is invalid.")
 
         return attrs
 

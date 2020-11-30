@@ -124,13 +124,19 @@ class ReservationViewSet(
         if serializer.validated_data.get("past"):
             queryset = queryset.filter(event_date__lt=date_today)
 
+        if department_id := serializer.validated_data.get("department_id"):
+            queryset = queryset.from_department(department_id)
+
         if status := serializer.validated_data.get("status"):
+            for_user_type = serializer.validated_data.get("for_user_type")
+            for_user_type = {"for_user": for_user_type} if for_user_type else {}
+
             if status == choices.ReservationStatus.ACCEPTED:
-                queryset = queryset.accepted()
+                queryset = queryset.accepted(**for_user_type)
             elif status == choices.ReservationStatus.DECLINED:
-                queryset = queryset.declined()
+                queryset = queryset.declined(**for_user_type)
             else:
-                queryset = queryset.pending()
+                queryset = queryset.pending(**for_user_type)
 
         if self.request.query_params.get("is_accepted_department") is not None:
             is_accepted_department = serializer.validated_data.get(
