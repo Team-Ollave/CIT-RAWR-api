@@ -37,8 +37,14 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             "is_accepted_department": {"default": None},
             "is_accepted_imdc": {"default": None},
             "is_accepted_president": {"default": None},
-            "start_time": {"format": "%H:%M"},
-            "end_time": {"format": "%H:%M"},
+            "start_time": {
+                "format": "%H:%M",
+                "input_formats": ("%I:%M %p", "%H:%M"),
+            },
+            "end_time": {
+                "format": "%H:%M",
+                "input_formats": ("%I:%M %p", "%H:%M"),
+            },
         }
 
     def get_event_organizer_name(self, obj):
@@ -70,6 +76,7 @@ class ReservationModelSerializer(serializers.ModelSerializer):
 
         if (
             models.Reservation.objects.accepted()
+            .filter(event_date=event_date)
             .filter(
                 Q(end_time__range=(start_time, end_time))
                 | Q(start_time__range=(start_time, end_time))
