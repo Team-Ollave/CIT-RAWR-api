@@ -130,7 +130,7 @@ class ReservationViewSet(
             if status == choices.ReservationStatus.ACCEPTED:
                 queryset = queryset.accepted(**for_user_type)
             elif status == choices.ReservationStatus.DECLINED:
-                queryset = queryset.declined()
+                queryset = queryset.declined(**for_user_type)
             else:
                 queryset = queryset.pending(**for_user_type)
 
