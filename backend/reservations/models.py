@@ -80,7 +80,7 @@ class Reservation(models.Model):
         default_related_name = "reservations"
 
     def __str__(self):
-        return f"{self.id} - {self.requestor}"
+        return f"{self.id} - {self.event_name}"
 
     @property
     def status(self) -> str:
