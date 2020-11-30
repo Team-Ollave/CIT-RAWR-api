@@ -1846,6 +1846,110 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2020-11-30T18:26:37.122Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "9 - ST Building - Case Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2020-11-30T18:26:51.535Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "10 - ST Building - CREATE Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2020-11-30T18:27:00.662Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "16 - Main Building - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2020-11-30T18:27:07.222Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "17 - Main Building - Featured Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2020-11-30T18:27:12.160Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "11 - College Library - Special Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2020-11-30T18:27:22.981Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "12 - College Library - Special Room 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2020-11-30T18:27:30.049Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "21 - Engineering Building - Golden Gear Hotel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2020-11-30T18:27:36.253Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "22 - Engineering Building - Featured Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -2383,6 +2487,14 @@
 },
 {
   "model": "sessions.session",
+  "pk": "s7yszrc4wqk44zoyq2ha2dboffb3qe2c",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEdHgVcuvcbCMMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxJnAeL0u2HKD247oHtqt1nmua3LhHJX5EG7vM7Ez8vh_h3U1Ou39jpocgwjodIMOgDgoDWWUNhlGK0z6MgmhehtKiGgKa7YgUD5YADE-wPXGzd6:1kjnsP:K946Jaq7h1bLK1au4dr-HkBwSfRrw-9cjaEQsdSD_P8",
+    "expire_date": "2020-12-14T18:26:17.400Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "zoxkpitl0ipj15xvyegwago4m2903n57",
   "fields": {
     "session_data": ".eJxVjMsOwiAQRf-FtSEdHgVcuvcbCMMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxJnAeL0u2HKD247oHtqt1nmua3LhHJX5EG7vM7Ez8vh_h3U1Ou39jpocgwjodIMOgDgoDWWUNhlGK0z6MgmhehtKiGgKa7YgUD5YADE-wPXGzd6:1kjl7g:RrDopGhZ7WGwZj8LF8HUY7_lB3ariuoNu7IN0OwXkjE",
@@ -2473,7 +2585,7 @@
     "available_end_time": "18:00:00",
     "building": 1,
     "room_category": null,
-    "department": null
+    "department": 9
   }
 },
 {
@@ -2485,7 +2597,7 @@
     "available_end_time": "05:30:00",
     "building": 1,
     "room_category": null,
-    "department": null
+    "department": 9
   }
 },
 {
@@ -2497,7 +2609,7 @@
     "available_end_time": "17:00:00",
     "building": 3,
     "room_category": null,
-    "department": null
+    "department": 15
   }
 },
 {
@@ -2509,7 +2621,7 @@
     "available_end_time": "12:00:00",
     "building": 3,
     "room_category": null,
-    "department": null
+    "department": 14
   }
 },
 {
@@ -2521,7 +2633,7 @@
     "available_end_time": "21:00:00",
     "building": 2,
     "room_category": null,
-    "department": null
+    "department": 14
   }
 },
 {
@@ -2533,7 +2645,7 @@
     "available_end_time": "17:00:00",
     "building": 2,
     "room_category": null,
-    "department": null
+    "department": 15
   }
 },
 {
@@ -2545,7 +2657,7 @@
     "available_end_time": "17:30:00",
     "building": 4,
     "room_category": null,
-    "department": null
+    "department": 13
   }
 },
 {
@@ -2557,7 +2669,7 @@
     "available_end_time": "15:00:00",
     "building": 4,
     "room_category": null,
-    "department": null
+    "department": 12
   }
 },
 {
@@ -3011,7 +3123,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$216000$xAmGfVanXLhA$5SYgKhR/C0HkeWPjFesXwYEUlAkvRET+cQFU/vG0eFY=",
-    "last_login": "2020-11-30T15:29:52.087Z",
+    "last_login": "2020-11-30T18:26:17.397Z",
     "is_superuser": true,
     "email": "admin@email.com",
     "profile": null,
