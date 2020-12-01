@@ -2,8 +2,8 @@ from django.db.models import TextChoices
 
 
 class Sex(TextChoices):
-    MALE = ("M", "Student")
-    FEMALE = ("F", "Teacher")
+    MALE = ("M", "Male")
+    FEMALE = ("F", "Female")
 
 
 class UserType(TextChoices):

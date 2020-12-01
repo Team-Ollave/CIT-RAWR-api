@@ -1,0 +1,3346 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2020-11-29T10:09:29.102Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "UserProfile object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2020-11-29T10:10:35.112Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "student@email.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2020-11-29T10:11:41.940Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "UserProfile object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2020-11-29T10:13:14.963Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "UserProfile object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2020-11-29T10:13:31.182Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "UserProfile object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2020-11-29T10:13:43.834Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "UserProfile object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2020-11-29T10:16:01.715Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "3 - CCSDept User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2020-11-29T10:16:09.213Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "1 - Student User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2020-11-29T10:16:14.376Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "2 - Teacher User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2020-11-29T10:16:31.506Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "4 - Imdc User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2020-11-29T10:16:36.852Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "5 - President User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2020-11-29T10:18:07.830Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "6 - Crim User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2020-11-29T10:18:46.027Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "7 - Nursing User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2020-11-29T10:19:06.130Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "8 - Accountancy User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2020-11-29T10:19:18.154Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "7 - CONDept User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2020-11-29T10:19:36.166Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "6 - CCJDept User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2020-11-29T10:19:45.550Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "8 - CMBADept User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2020-11-29T10:20:00.696Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "9 - CEADept User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2020-11-29T10:20:23.612Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "10",
+    "object_repr": "10 - CASEDept User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2020-11-29T10:24:48.405Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "1 - Student1 User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2020-11-29T10:24:52.695Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "2 - Teacher1 User",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2020-11-29T10:25:06.549Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "11",
+    "object_repr": "11 - Student2 User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2020-11-29T10:25:20.040Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "12",
+    "object_repr": "12 - Student3 User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2020-11-29T10:25:38.158Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "13",
+    "object_repr": "13 - Teacher2 User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2020-11-29T10:26:51.857Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "14 - Teacher3 User",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2020-11-29T10:26:59.991Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "16",
+    "object_repr": "pres@email.com",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2020-11-29T10:27:14.635Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "16",
+    "object_repr": "pres@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2020-11-29T10:27:22.604Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "15",
+    "object_repr": "imdc@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2020-11-29T10:27:30.456Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "14",
+    "object_repr": "case@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2020-11-29T10:27:37.322Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "13",
+    "object_repr": "cea@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2020-11-29T10:27:43.818Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "12",
+    "object_repr": "cmba@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2020-11-29T10:27:49.871Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "11",
+    "object_repr": "con@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2020-11-29T10:27:56.204Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "10",
+    "object_repr": "ccj@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2020-11-29T10:28:02.842Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "ccs@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2020-11-29T10:28:10.150Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "teacher3@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2020-11-29T10:28:15.449Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "teacher2@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2020-11-29T10:28:22.762Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "student3@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2020-11-29T10:28:28.102Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "student2@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2020-11-29T10:28:55.976Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "student1@email.com",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2020-11-29T10:29:04.292Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "teacher1@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Profile\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2020-11-29T10:30:30.529Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "ST Building",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2020-11-29T10:31:07.047Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Main Building",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2020-11-29T10:31:55.841Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "College Library",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2020-11-29T10:32:23.308Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "4",
+    "object_repr": "Engineering Building",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2020-11-29T10:34:08.787Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Classroom",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2020-11-29T10:34:14.852Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Science Lab",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2020-11-29T10:34:21.747Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Computer Laboratory",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2020-11-29T10:34:27.923Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Science Laboratory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2020-11-29T10:34:34.803Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Discussion Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2020-11-29T10:38:55.247Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "1 - ST Building - ST101",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2020-11-29T10:39:25.097Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "2 - ST Building - ST102",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2020-11-29T10:40:06.795Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "3 - ST Building - ST310",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2020-11-29T10:40:51.343Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "4 - ST Building - ST309",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2020-11-29T10:41:50.425Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "5 - ST Building - ST308",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2020-11-29T12:12:05.612Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "6 - College Library - Discussion Room 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2020-11-29T12:12:47.395Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "7 - College Library - Discussion Room 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2020-11-29T12:13:16.747Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "8 - College Library - Discussion Room 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2020-11-29T12:13:56.070Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "9 - ST Building - Case Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2020-11-29T12:14:40.970Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "10 - ST Building - CREATE Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2020-11-29T12:15:09.829Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "11 - College Library - Special Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2020-11-29T12:15:28.791Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "12 - College Library - Special Room 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2020-11-29T12:15:44.727Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "3 - ST Building - ST310",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2020-11-29T12:16:07.221Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "5 - ST Building - ST308",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2020-11-29T12:40:55.473Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "1 - ST Building - ST101",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2020-11-29T12:57:30.696Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "13 - Main Building - 214",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2020-11-29T12:57:52.756Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "14 - Main Building - 216",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2020-11-29T12:58:23.684Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Physics Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2020-11-29T12:58:48.076Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "15 - Main Building - 416",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2020-11-29T12:59:28.225Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "16 - ST Building - Mass Communication Theater Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2020-11-29T13:00:00.569Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "17 - Engineering Building - Featured Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2020-11-29T13:00:10.282Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "17 - Main Building - Featured Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Building\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2020-11-29T13:00:26.831Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "16 - Main Building - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Building\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2020-11-29T13:03:26.271Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "18 - Engineering Building - E301",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2020-11-29T13:03:52.536Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "19 - Engineering Building - E204",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2020-11-29T13:05:12.046Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "20 - Engineering Building - E405",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2020-11-29T13:05:32.066Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "21 - Engineering Building - Golden Gear Hotel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2020-11-29T13:05:56.365Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "22 - Engineering Building - Featured Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2020-11-29T16:01:30.815Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - student@email.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2020-11-29T16:03:21.683Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - student@email.com",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2020-11-29T16:03:28.988Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - student@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Room\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2020-11-29T16:04:42.398Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - student@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.104Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "20 - Engineering Building - E405",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.124Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "19 - Engineering Building - E204",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.128Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "18 - Engineering Building - E301",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.132Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "8 - College Library - Discussion Room 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.137Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "7 - College Library - Discussion Room 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.144Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "6 - College Library - Discussion Room 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.148Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "15 - Main Building - 416",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.152Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "14 - Main Building - 216",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.158Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "13 - Main Building - 214",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.162Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "4 - ST Building - ST309",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.166Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "2 - ST Building - ST102",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2020-11-30T05:15:31.172Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "1 - ST Building - ST101",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2020-11-30T15:33:39.658Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - student@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2020-11-30T15:33:56.266Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - student@email.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2020-11-30T15:36:09.402Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - First Part Without Vacant Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2020-11-30T15:36:18.434Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - 1st Part With Vacant Accepted Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2020-11-30T15:36:27.043Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - 2nd Part With Vacant Accepted Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2020-11-30T15:36:40.452Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st Part Without Vacant Accepted Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2020-11-30T15:38:40.982Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "4 - 2nd Part Without Vacant Accepted Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2020-11-30T15:46:34.714Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "5 - First Past Accepted Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2020-11-30T15:46:56.089Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st Part Without Vacant Accepted Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Requestor\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2020-11-30T15:47:20.278Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - 2nd Part With Vacant Accepted Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Requestor\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2020-11-30T15:47:33.409Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - 1st Part With Vacant Accepted Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Requestor\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2020-11-30T15:48:01.468Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "5 - 1st Past Accepted Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2020-11-30T15:48:46.022Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "6 - 2nd Past Accepted Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2020-11-30T15:50:21.681Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "7 - Pending to IMDC Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2020-11-30T15:51:08.786Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "8 - Declined by IMDC Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2020-11-30T15:52:17.982Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "9 - Pending to Dept Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2020-11-30T15:53:13.662Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "10 - Declined by Dept Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2020-11-30T15:54:58.154Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "11 - Pending to President Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2020-11-30T15:55:43.641Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "12 - Declined by President Reservation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2020-11-30T16:01:34.933Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - 1st V/A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2020-11-30T16:01:44.823Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - 2nd Part V/AReservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2020-11-30T16:01:57.331Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st WV/A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2020-11-30T16:02:13.391Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "4 - 2nd WV/A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2020-11-30T16:03:05.347Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - 2nd V/A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2020-11-30T16:03:57.760Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "4 - 2nd A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2020-11-30T16:04:07.527Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2020-11-30T16:04:20.436Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st X/A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2020-11-30T16:04:37.047Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st WOV/A Reservation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2020-11-30T16:05:01.814Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st Vacant Accepted",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2020-11-30T16:05:11.683Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - 2nd Vacant Accepted",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2020-11-30T16:05:19.111Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st No Vacant Accepted",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2020-11-30T16:05:35.582Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "4 - 2nd No Vacant",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2020-11-30T16:05:42.753Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "3 - 1st No Vacant",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2020-11-30T16:05:48.522Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2 - 2nd With Vacant",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2020-11-30T16:06:10.241Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "1 - 1st With Vacant",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2020-11-30T16:06:17.715Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "5 - 1st Past Accepted",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2020-11-30T16:06:22.962Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "6 - 2nd Past Accepted",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2020-11-30T16:06:30.262Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "7 - Pending to IMDC",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2020-11-30T16:06:43.727Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "8 - Declined by IMDC",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2020-11-30T16:06:51.917Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "9 - Pending to Dept",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2020-11-30T16:06:57.066Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "10 - Declined by Dept",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2020-11-30T16:07:02.401Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "11 - Pending to President",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2020-11-30T16:07:07.234Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "12 - Declined by President",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2020-11-30T17:20:25.260Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - Accepted Today",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2020-11-30T17:21:23.760Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "14 - Accepted Today 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2020-11-30T17:21:37.054Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - Accepted Today",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"End time\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2020-11-30T17:22:28.949Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "15 - Accepted Tomorrow",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2020-11-30T17:23:10.815Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "16",
+    "object_repr": "16 - Accepted Other Day",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2020-11-30T17:23:38.750Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "17 - Accepted Other Day 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2020-11-30T18:26:37.122Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "9 - ST Building - Case Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2020-11-30T18:26:51.535Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "10 - ST Building - CREATE Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2020-11-30T18:27:00.662Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "16 - Main Building - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2020-11-30T18:27:07.222Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "17 - Main Building - Featured Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2020-11-30T18:27:12.160Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "11 - College Library - Special Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2020-11-30T18:27:22.981Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "12 - College Library - Special Room 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2020-11-30T18:27:30.049Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "21 - Engineering Building - Golden Gear Hotel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2020-11-30T18:27:36.253Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "22 - Engineering Building - Featured Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Department\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add building",
+    "content_type": 6,
+    "codename": "add_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change building",
+    "content_type": 6,
+    "codename": "change_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete building",
+    "content_type": 6,
+    "codename": "delete_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view building",
+    "content_type": 6,
+    "codename": "view_building"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add room",
+    "content_type": 7,
+    "codename": "add_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change room",
+    "content_type": 7,
+    "codename": "change_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete room",
+    "content_type": 7,
+    "codename": "delete_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view room",
+    "content_type": 7,
+    "codename": "view_room"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add room category",
+    "content_type": 8,
+    "codename": "add_roomcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change room category",
+    "content_type": 8,
+    "codename": "change_roomcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete room category",
+    "content_type": 8,
+    "codename": "delete_roomcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view room category",
+    "content_type": 8,
+    "codename": "view_roomcategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add room image",
+    "content_type": 9,
+    "codename": "add_roomimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change room image",
+    "content_type": 9,
+    "codename": "change_roomimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete room image",
+    "content_type": 9,
+    "codename": "delete_roomimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view room image",
+    "content_type": 9,
+    "codename": "view_roomimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add reservation",
+    "content_type": 10,
+    "codename": "add_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change reservation",
+    "content_type": 10,
+    "codename": "change_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete reservation",
+    "content_type": 10,
+    "codename": "delete_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view reservation",
+    "content_type": 10,
+    "codename": "view_reservation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add user profile",
+    "content_type": 11,
+    "codename": "add_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change user profile",
+    "content_type": 11,
+    "codename": "change_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete user profile",
+    "content_type": 11,
+    "codename": "delete_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view user profile",
+    "content_type": 11,
+    "codename": "view_userprofile"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 12,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 12,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 12,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 12,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "reservations",
+    "model": "building"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "reservations",
+    "model": "room"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "reservations",
+    "model": "roomcategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "reservations",
+    "model": "roomimage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "reservations",
+    "model": "reservation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "users",
+    "model": "userprofile"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0ow70dqc89vjiriwle2bm5acq6s4032w",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEdHgVcuvcbCMMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxJnAeL0u2HKD247oHtqt1nmua3LhHJX5EG7vM7Ez8vh_h3U1Ou39jpocgwjodIMOgDgoDWWUNhlGK0z6MgmhehtKiGgKa7YgUD5YADE-wPXGzd6:1kjJda:6IlT9n6TK0fJx3YA89l00VLaJAWrgBJ76kAtkyldx78",
+    "expire_date": "2020-12-13T10:08:58.090Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "s7yszrc4wqk44zoyq2ha2dboffb3qe2c",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEdHgVcuvcbCMMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxJnAeL0u2HKD247oHtqt1nmua3LhHJX5EG7vM7Ez8vh_h3U1Ou39jpocgwjodIMOgDgoDWWUNhlGK0z6MgmhehtKiGgKa7YgUD5YADE-wPXGzd6:1kjnsP:K946Jaq7h1bLK1au4dr-HkBwSfRrw-9cjaEQsdSD_P8",
+    "expire_date": "2020-12-14T18:26:17.400Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zoxkpitl0ipj15xvyegwago4m2903n57",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEdHgVcuvcbCMMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxJnAeL0u2HKD247oHtqt1nmua3LhHJX5EG7vM7Ez8vh_h3U1Ou39jpocgwjodIMOgDgoDWWUNhlGK0z6MgmhehtKiGgKa7YgUD5YADE-wPXGzd6:1kjl7g:RrDopGhZ7WGwZj8LF8HUY7_lB3ariuoNu7IN0OwXkjE",
+    "expire_date": "2020-12-14T15:29:52.096Z"
+  }
+},
+{
+  "model": "reservations.building",
+  "pk": 1,
+  "fields": {
+    "name": "ST Building",
+    "latitude": 10.294319963606112,
+    "longitude": 123.88102723728441,
+    "description": "This is the ST Building"
+  }
+},
+{
+  "model": "reservations.building",
+  "pk": 2,
+  "fields": {
+    "name": "Main Building",
+    "latitude": 10.294751445183108,
+    "longitude": 123.88060210717293,
+    "description": "This is the Main Building"
+  }
+},
+{
+  "model": "reservations.building",
+  "pk": 3,
+  "fields": {
+    "name": "College Library",
+    "latitude": 10.295214594471053,
+    "longitude": 123.8807026900071,
+    "description": "This is the College Library"
+  }
+},
+{
+  "model": "reservations.building",
+  "pk": 4,
+  "fields": {
+    "name": "Engineering Building",
+    "latitude": 10.295778685623082,
+    "longitude": 123.88099773297772,
+    "description": "This is the Engineering Building"
+  }
+},
+{
+  "model": "reservations.roomcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Classroom"
+  }
+},
+{
+  "model": "reservations.roomcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Science Laboratory"
+  }
+},
+{
+  "model": "reservations.roomcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Computer Laboratory"
+  }
+},
+{
+  "model": "reservations.roomcategory",
+  "pk": 4,
+  "fields": {
+    "name": "Discussion Room"
+  }
+},
+{
+  "model": "reservations.roomcategory",
+  "pk": 5,
+  "fields": {
+    "name": "Physics Room"
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 9,
+  "fields": {
+    "name": "Case Room",
+    "available_start_time": "07:00:00",
+    "available_end_time": "18:00:00",
+    "building": 1,
+    "room_category": null,
+    "department": 9
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 10,
+  "fields": {
+    "name": "CREATE Room",
+    "available_start_time": "08:30:00",
+    "available_end_time": "05:30:00",
+    "building": 1,
+    "room_category": null,
+    "department": 9
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 11,
+  "fields": {
+    "name": "Special Room",
+    "available_start_time": "12:00:00",
+    "available_end_time": "17:00:00",
+    "building": 3,
+    "room_category": null,
+    "department": 15
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 12,
+  "fields": {
+    "name": "Special Room 2",
+    "available_start_time": "07:00:00",
+    "available_end_time": "12:00:00",
+    "building": 3,
+    "room_category": null,
+    "department": 14
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 16,
+  "fields": {
+    "name": "Mass Communication Theater Room",
+    "available_start_time": "07:00:00",
+    "available_end_time": "21:00:00",
+    "building": 2,
+    "room_category": null,
+    "department": 14
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 17,
+  "fields": {
+    "name": "Featured Room",
+    "available_start_time": "12:00:00",
+    "available_end_time": "17:00:00",
+    "building": 2,
+    "room_category": null,
+    "department": 15
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 21,
+  "fields": {
+    "name": "Golden Gear Hotel",
+    "available_start_time": "07:00:00",
+    "available_end_time": "17:30:00",
+    "building": 4,
+    "room_category": null,
+    "department": 13
+  }
+},
+{
+  "model": "reservations.room",
+  "pk": 22,
+  "fields": {
+    "name": "Featured Room",
+    "available_start_time": "07:00:00",
+    "available_end_time": "15:00:00",
+    "building": 4,
+    "room_category": null,
+    "department": 12
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 1,
+  "fields": {
+    "event_name": "1st With Vacant",
+    "event_date": "2022-01-01",
+    "start_time": "07:00:00",
+    "end_time": "10:00:00",
+    "date_registered": "2020-11-29T16:01:30.809Z",
+    "event_description": "This is the first accepted upcoming reservation.",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 5
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 2,
+  "fields": {
+    "event_name": "2nd With Vacant",
+    "event_date": "2022-01-01",
+    "start_time": "13:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-11-29T16:03:21.680Z",
+    "event_description": "This is the second accepted upcoming reservation.",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 5
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 3,
+  "fields": {
+    "event_name": "1st No Vacant",
+    "event_date": "2022-01-01",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T15:36:09.398Z",
+    "event_description": "This is First Part Without Vacant Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 5
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 4,
+  "fields": {
+    "event_name": "2nd No Vacant",
+    "event_date": "2022-01-01",
+    "start_time": "13:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-11-30T15:38:40.977Z",
+    "event_description": "2nd Part Without Vacant Accepted Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 5
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 5,
+  "fields": {
+    "event_name": "1st Past Accepted",
+    "event_date": "2020-11-29",
+    "start_time": "07:00:00",
+    "end_time": "08:00:00",
+    "date_registered": "2020-11-30T15:46:34.707Z",
+    "event_description": "This is the First Past Accepted Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 3
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 6,
+  "fields": {
+    "event_name": "2nd Past Accepted",
+    "event_date": "2020-11-29",
+    "start_time": "12:00:00",
+    "end_time": "14:00:00",
+    "date_registered": "2020-11-30T15:48:46.021Z",
+    "event_description": "This is the 2nd Past Accepted Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 10,
+    "requestor": 5
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 7,
+  "fields": {
+    "event_name": "Pending to IMDC",
+    "event_date": "2022-01-01",
+    "start_time": "08:00:00",
+    "end_time": "10:00:00",
+    "date_registered": "2020-11-30T15:50:21.676Z",
+    "event_description": "Pending to IMDC Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": false,
+    "is_accepted_president": false,
+    "room": 16,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 8,
+  "fields": {
+    "event_name": "Declined by IMDC",
+    "event_date": "2022-01-01",
+    "start_time": "07:00:00",
+    "end_time": "10:00:00",
+    "date_registered": "2020-11-30T15:51:08.783Z",
+    "event_description": "Declined by IMDC Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": false,
+    "is_accepted_president": false,
+    "room": 16,
+    "requestor": 8
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 9,
+  "fields": {
+    "event_name": "Pending to Dept",
+    "event_date": "2022-01-01",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T15:52:17.979Z",
+    "event_description": "This is the Pending to Dept Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": null,
+    "is_accepted_imdc": null,
+    "is_accepted_president": null,
+    "room": 11,
+    "requestor": 3
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 10,
+  "fields": {
+    "event_name": "Declined by Dept",
+    "event_date": "2022-01-01",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T15:53:13.660Z",
+    "event_description": "This is the Declined by Dept Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": false,
+    "is_accepted_imdc": null,
+    "is_accepted_president": null,
+    "room": 12,
+    "requestor": 3
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 11,
+  "fields": {
+    "event_name": "Pending to President",
+    "event_date": "2021-01-01",
+    "start_time": "12:00:00",
+    "end_time": "05:00:00",
+    "date_registered": "2020-11-30T15:54:58.151Z",
+    "event_description": "This is Pending to President Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": null,
+    "room": 22,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 12,
+  "fields": {
+    "event_name": "Declined by President",
+    "event_date": "2022-01-01",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T15:55:43.638Z",
+    "event_description": "This is the Declined by President Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": false,
+    "room": 22,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 13,
+  "fields": {
+    "event_name": "Accepted Today",
+    "event_date": "2020-12-01",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T17:20:25.256Z",
+    "event_description": "This is Accepted Today Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 14,
+  "fields": {
+    "event_name": "Accepted Today 2",
+    "event_date": "2020-12-01",
+    "start_time": "13:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-11-30T17:21:23.759Z",
+    "event_description": "This is Accepted Today 2",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 3
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 15,
+  "fields": {
+    "event_name": "Accepted Tomorrow",
+    "event_date": "2020-12-02",
+    "start_time": "12:00:00",
+    "end_time": "14:00:00",
+    "date_registered": "2020-11-30T17:22:28.948Z",
+    "event_description": "This is Accepted Tomorrow Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 5
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 16,
+  "fields": {
+    "event_name": "Accepted Other Day",
+    "event_date": "2020-12-03",
+    "start_time": "12:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-11-30T17:23:10.813Z",
+    "event_description": "This is Accepted Other Day Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 17,
+  "fields": {
+    "event_name": "Accepted Other Day 2",
+    "event_date": "2020-12-03",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-11-30T17:23:38.748Z",
+    "event_description": "This is Accepted Other Day 2 Reservation",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 9,
+    "requestor": 7
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 1,
+  "fields": {
+    "first_name": "Student1",
+    "last_name": "User",
+    "display_name": "student",
+    "sex": "M"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 2,
+  "fields": {
+    "first_name": "Teacher1",
+    "last_name": "User",
+    "display_name": "teacher",
+    "sex": "F"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 3,
+  "fields": {
+    "first_name": "CCSDept",
+    "last_name": "User",
+    "display_name": "ccs",
+    "sex": "M"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 4,
+  "fields": {
+    "first_name": "Imdc",
+    "last_name": "User",
+    "display_name": "imdc",
+    "sex": "F"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 5,
+  "fields": {
+    "first_name": "President",
+    "last_name": "User",
+    "display_name": "pres",
+    "sex": "M"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 6,
+  "fields": {
+    "first_name": "CCJDept",
+    "last_name": "User",
+    "display_name": "crim",
+    "sex": "F"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 7,
+  "fields": {
+    "first_name": "CONDept",
+    "last_name": "User",
+    "display_name": "con",
+    "sex": "M"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 8,
+  "fields": {
+    "first_name": "CMBADept",
+    "last_name": "User",
+    "display_name": "cmba",
+    "sex": "F"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 9,
+  "fields": {
+    "first_name": "CEADept",
+    "last_name": "User",
+    "display_name": "cea",
+    "sex": "M"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 10,
+  "fields": {
+    "first_name": "CASEDept",
+    "last_name": "User",
+    "display_name": "case",
+    "sex": "F"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 11,
+  "fields": {
+    "first_name": "Student2",
+    "last_name": "User",
+    "display_name": "student2",
+    "sex": "F"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 12,
+  "fields": {
+    "first_name": "Student3",
+    "last_name": "User",
+    "display_name": "student3",
+    "sex": "M"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 13,
+  "fields": {
+    "first_name": "Teacher2",
+    "last_name": "User",
+    "display_name": "teacher2",
+    "sex": "M"
+  }
+},
+{
+  "model": "users.userprofile",
+  "pk": 14,
+  "fields": {
+    "first_name": "Teacher3",
+    "last_name": "User",
+    "display_name": "teacher3",
+    "sex": "F"
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$xAmGfVanXLhA$5SYgKhR/C0HkeWPjFesXwYEUlAkvRET+cQFU/vG0eFY=",
+    "last_login": "2020-11-30T18:26:17.397Z",
+    "is_superuser": true,
+    "email": "admin@email.com",
+    "profile": null,
+    "user_type": "E",
+    "is_staff": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "123",
+    "last_login": "2020-11-29T10:10:13Z",
+    "is_superuser": false,
+    "email": "student@email.com",
+    "profile": 1,
+    "user_type": "E",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$s3offDaiVxHT$Skurhg3WKGGo7dXbLTKSnJcH48BDikz94MC266r3XZY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "teacher1@email.com",
+    "profile": 2,
+    "user_type": "E",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$5Jjbl2whjJkM$p0NKKbCwm4p/T0aCbAzjZjr799/US8+KZJUiBdMu0lM=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "student2@email.com",
+    "profile": 11,
+    "user_type": "E",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$aLo4EgQ9yCRr$ew45rsMZ46IxJRRoNQWz9A2J00dDzUvjzRi1Fa7CESU=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "student3@email.com",
+    "profile": 12,
+    "user_type": "E",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$0w7FF2hDTqJh$uSoGcRCusyiylFO58b5xsFtHpQf37UDaO59VRXyzfBY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "teacher2@email.com",
+    "profile": 13,
+    "user_type": "E",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$S9RXSTzJjM1q$3Ogrcc/R1slzhBZoxCz0pfyX9dzgqze8O2KUt3X1ihE=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "teacher3@email.com",
+    "profile": 14,
+    "user_type": "E",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$qB8e7MzZ6Z2y$h3Aj8LwFV3f/6ZvHeExFOln8UgphdNUKM4XVtWASpDU=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "ccs@email.com",
+    "profile": 3,
+    "user_type": "D",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$WiJ6S2GCCIEa$oCY4ClM+IIP4fto/u2xVvLwDfI0I+RNfix3Leoa6PvY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "ccj@email.com",
+    "profile": 6,
+    "user_type": "D",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$J836RVvKyom6$E2nxnueaQvPjg0ccnnmbq0fL9QBJZNzbRqjLZBMMG4Y=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "con@email.com",
+    "profile": 7,
+    "user_type": "D",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 12,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$VEObA7NbjRNj$TaJcbXXE/FOQMz+jeT5fWr5pN6EBnzK8/w+SDSRGW/c=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "cmba@email.com",
+    "profile": 8,
+    "user_type": "D",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 13,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$tcuO3BTW9SiL$WeSopgGaYX8lvf0C2DP1dZPOHjtsOqWzDuFzVRSoKaY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "cea@email.com",
+    "profile": 9,
+    "user_type": "D",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 14,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$6NgqfIDnGYj8$0bBXhnn4pwEdbL18oJp6TSXf2101lbzcd5nMtfLxS4s=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "case@email.com",
+    "profile": 10,
+    "user_type": "D",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 15,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$5VE310mNIy5f$ba97HnTWeQoVWXwOti08ECZiJtNjJCltBJlkvlaUdX0=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "imdc@email.com",
+    "profile": 4,
+    "user_type": "I",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$bGXgVYKY4wks$pe/w5ioImUFZ3Gsl+3kyWFl3kON/A23hKVcwLkVHvyo=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "pres@email.com",
+    "profile": 5,
+    "user_type": "P",
+    "is_staff": false,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

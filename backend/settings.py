@@ -26,7 +26,7 @@ SECRET_KEY = "p)btkbbzdcml1^^!$!w)6_1h^yb2_u0098gyjl=@=m+w7b^91="
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -41,9 +41,13 @@ INSTALLED_APPS = [
     # project apps
     "backend.reservations",
     "backend.users",
+    # 3rd party apps
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -111,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Hongkong"
 
 USE_I18N = True
 
@@ -125,3 +129,13 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 AUTH_USER_MODEL = "users.User"
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
+
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+MEDIA_ROOT = "media/"
+MEDIA_URL = "/media/"
