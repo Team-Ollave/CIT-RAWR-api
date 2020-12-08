@@ -157,6 +157,14 @@ class ReservationViewSet(
 
         return queryset.all()
 
+    def get_serializer_context(self):
+        query_params = self.request.query_params
+        for_user_type = query_params.get("for_user_type")
+
+        context = super().get_serializer_context()
+        context.update({"for_user_type": for_user_type})
+        return context
+
 
 class RoomImageViewSet(
     mixins.CreateModelMixin,

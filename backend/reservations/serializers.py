@@ -37,7 +37,7 @@ class RoomModelSerializer(serializers.ModelSerializer):
 
 
 class ReservationModelSerializer(serializers.ModelSerializer):
-    status = serializers.ReadOnlyField()
+    status = serializers.SerializerMethodField()
     event_organizer_name = serializers.SerializerMethodField()
     requestor_data = UserModelSerializer(read_only=True, source="requestor")
 
@@ -58,6 +58,38 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             },
             "event_date": {"input_formats": ("%m-%d-%Y", "%Y-%m-%d")},
         }
+
+    def get_status(self, obj):
+        user_type = self.context.get("for_user_type")
+        if user_type == UserType.DEPARTMENT:
+            if obj.is_accepted_department:
+                return choices.ReservationStatus.ACCEPTED
+            elif not obj.is_accepted_department:
+                return choices.ReservationStatus.DECLINED
+
+            return choices.ReservationStatus.PENDING
+        if user_type == UserType.IMDC:
+            if obj.is_accepted_department and obj.is_accepted_imdc:
+                return choices.ReservationStatus.ACCEPTED
+            elif obj.is_accepted_department and not obj.is_accepted_imdc:
+                return choices.ReservationStatus.DECLINED
+
+            return choices.ReservationStatus.PENDING
+        if user_type == UserType.PRESIDENT:
+            if (
+                obj.is_accepted_department
+                and obj.is_accepted_imdc
+                and obj.is_accepted_president
+            ):
+                return choices.ReservationStatus.ACCEPTED
+            if (
+                obj.is_accepted_department
+                and obj.is_accepted_imdc
+                and not obj.is_accepted_department
+            ):
+                return choices.ReservationStatus.DECLINED
+
+        return obj.status
 
     def get_event_organizer_name(self, obj):
         try:
