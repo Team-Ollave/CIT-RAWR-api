@@ -62,32 +62,38 @@ class ReservationModelSerializer(serializers.ModelSerializer):
     def get_status(self, obj):
         user_type = self.context.get("for_user_type")
         if user_type == UserType.DEPARTMENT:
-            if obj.is_accepted_department:
+            if obj.is_accepted_department is True:
                 return choices.ReservationStatus.ACCEPTED
-            elif not obj.is_accepted_department:
+            elif obj.is_accepted_department is False:
                 return choices.ReservationStatus.DECLINED
-
-            return choices.ReservationStatus.PENDING
+            elif obj.is_accepted_department is None:
+                return choices.ReservationStatus.PENDING
         if user_type == UserType.IMDC:
-            if obj.is_accepted_department and obj.is_accepted_imdc:
+            if obj.is_accepted_department is True and obj.is_accepted_imdc is True:
                 return choices.ReservationStatus.ACCEPTED
-            elif obj.is_accepted_department and not obj.is_accepted_imdc:
+            elif obj.is_accepted_department is True and obj.is_accepted_imdc is False:
                 return choices.ReservationStatus.DECLINED
-
-            return choices.ReservationStatus.PENDING
+            elif obj.is_accepted_department is True and obj.is_accepted_imdc is None:
+                return choices.ReservationStatus.PENDING
         if user_type == UserType.PRESIDENT:
             if (
-                obj.is_accepted_department
-                and obj.is_accepted_imdc
-                and obj.is_accepted_president
+                obj.is_accepted_department is True
+                and obj.is_accepted_imdc is True
+                and obj.is_accepted_president is True
             ):
                 return choices.ReservationStatus.ACCEPTED
             if (
-                obj.is_accepted_department
-                and obj.is_accepted_imdc
-                and not obj.is_accepted_department
+                obj.is_accepted_department is True
+                and obj.is_accepted_imdc is True
+                and obj.is_accepted_department is False
             ):
                 return choices.ReservationStatus.DECLINED
+            if (
+                obj.is_accepted_department is True
+                and obj.is_accepted_imdc is True
+                and obj.is_accepted_department is None
+            ):
+                return choices.ReservationStatus.PENDING
 
         return obj.status
 
