@@ -66,15 +66,15 @@ class ReservationModelSerializer(serializers.ModelSerializer):
                 return choices.ReservationStatus.ACCEPTED
             elif obj.is_accepted_department is False:
                 return choices.ReservationStatus.DECLINED
-            elif obj.is_accepted_department is None:
-                return choices.ReservationStatus.PENDING
+
+            return choices.ReservationStatus.PENDING
         if user_type == UserType.IMDC:
             if obj.is_accepted_department is True and obj.is_accepted_imdc is True:
                 return choices.ReservationStatus.ACCEPTED
             elif obj.is_accepted_department is True and obj.is_accepted_imdc is False:
                 return choices.ReservationStatus.DECLINED
-            elif obj.is_accepted_department is True and obj.is_accepted_imdc is None:
-                return choices.ReservationStatus.PENDING
+
+            return choices.ReservationStatus.PENDING
         if user_type == UserType.PRESIDENT:
             if (
                 obj.is_accepted_department is True
@@ -88,12 +88,8 @@ class ReservationModelSerializer(serializers.ModelSerializer):
                 and obj.is_accepted_department is False
             ):
                 return choices.ReservationStatus.DECLINED
-            if (
-                obj.is_accepted_department is True
-                and obj.is_accepted_imdc is True
-                and obj.is_accepted_department is None
-            ):
-                return choices.ReservationStatus.PENDING
+
+            return choices.ReservationStatus.PENDING
 
         return obj.status
 
