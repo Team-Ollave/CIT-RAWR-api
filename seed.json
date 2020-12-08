@@ -1950,6 +1950,188 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2020-12-08T10:42:08.064Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "student@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2020-12-08T10:42:19.833Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "teacher1@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 153,
+  "fields": {
+    "action_time": "2020-12-08T10:42:28.380Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "student2@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 154,
+  "fields": {
+    "action_time": "2020-12-08T10:42:37.845Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "student3@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 155,
+  "fields": {
+    "action_time": "2020-12-08T10:42:53.543Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "teacher2@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 156,
+  "fields": {
+    "action_time": "2020-12-08T10:43:02.406Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "teacher3@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 157,
+  "fields": {
+    "action_time": "2020-12-08T10:43:18.367Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "ccs@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 158,
+  "fields": {
+    "action_time": "2020-12-08T10:43:31.529Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "10",
+    "object_repr": "ccj@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 159,
+  "fields": {
+    "action_time": "2020-12-08T10:43:49.232Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "11",
+    "object_repr": "con@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 160,
+  "fields": {
+    "action_time": "2020-12-08T10:43:56.522Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "12",
+    "object_repr": "cmba@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 161,
+  "fields": {
+    "action_time": "2020-12-08T10:44:06.666Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "13",
+    "object_repr": "cea@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 162,
+  "fields": {
+    "action_time": "2020-12-08T10:44:26.928Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "14",
+    "object_repr": "case@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 163,
+  "fields": {
+    "action_time": "2020-12-08T10:44:36.765Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "15",
+    "object_repr": "imdc@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 164,
+  "fields": {
+    "action_time": "2020-12-08T10:44:51.452Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "16",
+    "object_repr": "pres@cit.edu",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email\"]}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -2483,6 +2665,14 @@
   "fields": {
     "session_data": ".eJxVjMsOwiAQRf-FtSEdHgVcuvcbCMMMUjU0Ke3K-O_apAvd3nPOfYmYtrXGrfMSJxJnAeL0u2HKD247oHtqt1nmua3LhHJX5EG7vM7Ez8vh_h3U1Ou39jpocgwjodIMOgDgoDWWUNhlGK0z6MgmhehtKiGgKa7YgUD5YADE-wPXGzd6:1kjJda:6IlT9n6TK0fJx3YA89l00VLaJAWrgBJ76kAtkyldx78",
     "expire_date": "2020-12-13T10:08:58.090Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hola0a4hceocd3u9tksgecwgtxfgy3c7",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGllevjdK-pzB8veCA8iW4qRC3J1ESgHtm5n3Jj5sa_XbyIufE7kSTi6_G4b4zO0A6RHavdPY27rMSA-FnnTQqaf8up3u30ENo-61DALAKV5c4VqgUppJC0w7WVyIBpWwyJIw0UCxJYu8kygxI6JgUIB8vrtfN3g:1kmaXv:fA5IgNXEgdVfeTHrQGY9D844GZ5zCfYf1cD82uWn0pI",
+    "expire_date": "2020-12-22T10:48:39.662Z"
   }
 },
 {
@@ -3122,8 +3312,8 @@
   "model": "users.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$216000$xAmGfVanXLhA$5SYgKhR/C0HkeWPjFesXwYEUlAkvRET+cQFU/vG0eFY=",
-    "last_login": "2020-11-30T18:26:17.397Z",
+    "password": "pbkdf2_sha256$216000$z8vA4dmOyv4F$LrUCmznwRn7JhWfpWhV5yAYZ/zwhOVW5aX8uZr8YBGM=",
+    "last_login": "2020-12-08T10:48:39.642Z",
     "is_superuser": true,
     "email": "admin@email.com",
     "profile": null,
@@ -3137,10 +3327,10 @@
   "model": "users.user",
   "pk": 2,
   "fields": {
-    "password": "123",
+    "password": "pbkdf2_sha256$216000$dtgfbfOKdPXw$Ir4MfrQi1LPHyrAwok/YBuF51ez4+buZ4PJ0+6IWTYo=",
     "last_login": "2020-11-29T10:10:13Z",
     "is_superuser": false,
-    "email": "student@email.com",
+    "email": "student@cit.edu",
     "profile": 1,
     "user_type": "E",
     "is_staff": false,
@@ -3152,10 +3342,10 @@
   "model": "users.user",
   "pk": 3,
   "fields": {
-    "password": "pbkdf2_sha256$216000$s3offDaiVxHT$Skurhg3WKGGo7dXbLTKSnJcH48BDikz94MC266r3XZY=",
+    "password": "pbkdf2_sha256$216000$N5ghNcFOU9Tp$44qr5O+GEsQeAgA8nW1NUM0wfnlJhwQ7axRW2SAyTrQ=",
     "last_login": null,
     "is_superuser": false,
-    "email": "teacher1@email.com",
+    "email": "teacher1@cit.edu",
     "profile": 2,
     "user_type": "E",
     "is_staff": false,
@@ -3170,7 +3360,7 @@
     "password": "pbkdf2_sha256$216000$5Jjbl2whjJkM$p0NKKbCwm4p/T0aCbAzjZjr799/US8+KZJUiBdMu0lM=",
     "last_login": null,
     "is_superuser": false,
-    "email": "student2@email.com",
+    "email": "student2@cit.edu",
     "profile": 11,
     "user_type": "E",
     "is_staff": false,
@@ -3185,7 +3375,7 @@
     "password": "pbkdf2_sha256$216000$aLo4EgQ9yCRr$ew45rsMZ46IxJRRoNQWz9A2J00dDzUvjzRi1Fa7CESU=",
     "last_login": null,
     "is_superuser": false,
-    "email": "student3@email.com",
+    "email": "student3@cit.edu",
     "profile": 12,
     "user_type": "E",
     "is_staff": false,
@@ -3200,7 +3390,7 @@
     "password": "pbkdf2_sha256$216000$0w7FF2hDTqJh$uSoGcRCusyiylFO58b5xsFtHpQf37UDaO59VRXyzfBY=",
     "last_login": null,
     "is_superuser": false,
-    "email": "teacher2@email.com",
+    "email": "teacher2@cit.edu",
     "profile": 13,
     "user_type": "E",
     "is_staff": false,
@@ -3215,7 +3405,7 @@
     "password": "pbkdf2_sha256$216000$S9RXSTzJjM1q$3Ogrcc/R1slzhBZoxCz0pfyX9dzgqze8O2KUt3X1ihE=",
     "last_login": null,
     "is_superuser": false,
-    "email": "teacher3@email.com",
+    "email": "teacher3@cit.edu",
     "profile": 14,
     "user_type": "E",
     "is_staff": false,
@@ -3230,7 +3420,7 @@
     "password": "pbkdf2_sha256$216000$qB8e7MzZ6Z2y$h3Aj8LwFV3f/6ZvHeExFOln8UgphdNUKM4XVtWASpDU=",
     "last_login": null,
     "is_superuser": false,
-    "email": "ccs@email.com",
+    "email": "ccs@cit.edu",
     "profile": 3,
     "user_type": "D",
     "is_staff": false,
@@ -3245,7 +3435,7 @@
     "password": "pbkdf2_sha256$216000$WiJ6S2GCCIEa$oCY4ClM+IIP4fto/u2xVvLwDfI0I+RNfix3Leoa6PvY=",
     "last_login": null,
     "is_superuser": false,
-    "email": "ccj@email.com",
+    "email": "ccj@cit.edu",
     "profile": 6,
     "user_type": "D",
     "is_staff": false,
@@ -3260,7 +3450,7 @@
     "password": "pbkdf2_sha256$216000$J836RVvKyom6$E2nxnueaQvPjg0ccnnmbq0fL9QBJZNzbRqjLZBMMG4Y=",
     "last_login": null,
     "is_superuser": false,
-    "email": "con@email.com",
+    "email": "con@cit.edu",
     "profile": 7,
     "user_type": "D",
     "is_staff": false,
@@ -3275,7 +3465,7 @@
     "password": "pbkdf2_sha256$216000$VEObA7NbjRNj$TaJcbXXE/FOQMz+jeT5fWr5pN6EBnzK8/w+SDSRGW/c=",
     "last_login": null,
     "is_superuser": false,
-    "email": "cmba@email.com",
+    "email": "cmba@cit.edu",
     "profile": 8,
     "user_type": "D",
     "is_staff": false,
@@ -3290,7 +3480,7 @@
     "password": "pbkdf2_sha256$216000$tcuO3BTW9SiL$WeSopgGaYX8lvf0C2DP1dZPOHjtsOqWzDuFzVRSoKaY=",
     "last_login": null,
     "is_superuser": false,
-    "email": "cea@email.com",
+    "email": "cea@cit.edu",
     "profile": 9,
     "user_type": "D",
     "is_staff": false,
@@ -3305,7 +3495,7 @@
     "password": "pbkdf2_sha256$216000$6NgqfIDnGYj8$0bBXhnn4pwEdbL18oJp6TSXf2101lbzcd5nMtfLxS4s=",
     "last_login": null,
     "is_superuser": false,
-    "email": "case@email.com",
+    "email": "case@cit.edu",
     "profile": 10,
     "user_type": "D",
     "is_staff": false,
@@ -3320,7 +3510,7 @@
     "password": "pbkdf2_sha256$216000$5VE310mNIy5f$ba97HnTWeQoVWXwOti08ECZiJtNjJCltBJlkvlaUdX0=",
     "last_login": null,
     "is_superuser": false,
-    "email": "imdc@email.com",
+    "email": "imdc@cit.edu",
     "profile": 4,
     "user_type": "I",
     "is_staff": false,
@@ -3335,7 +3525,7 @@
     "password": "pbkdf2_sha256$216000$bGXgVYKY4wks$pe/w5ioImUFZ3Gsl+3kyWFl3kON/A23hKVcwLkVHvyo=",
     "last_login": null,
     "is_superuser": false,
-    "email": "pres@email.com",
+    "email": "pres@cit.edu",
     "profile": 5,
     "user_type": "P",
     "is_staff": false,
