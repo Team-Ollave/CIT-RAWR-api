@@ -2587,6 +2587,110 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 200,
+  "fields": {
+    "action_time": "2020-12-09T18:22:34.591Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "RoomImage object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 201,
+  "fields": {
+    "action_time": "2020-12-09T18:22:44.754Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "RoomImage object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 202,
+  "fields": {
+    "action_time": "2020-12-09T18:22:54.221Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "RoomImage object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 203,
+  "fields": {
+    "action_time": "2020-12-09T18:23:09.114Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "RoomImage object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 204,
+  "fields": {
+    "action_time": "2020-12-09T18:23:27.128Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "RoomImage object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 205,
+  "fields": {
+    "action_time": "2020-12-09T18:23:41.236Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "RoomImage object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 206,
+  "fields": {
+    "action_time": "2020-12-09T18:24:15.994Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "RoomImage object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 207,
+  "fields": {
+    "action_time": "2020-12-09T18:24:38.071Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "RoomImage object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -3323,6 +3427,70 @@
     "building": 4,
     "room_category": null,
     "department": 12
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 1,
+  "fields": {
+    "image": "images/room/1_f13i2K2.jpg",
+    "room": 21
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 2,
+  "fields": {
+    "image": "images/room/2_23dp6in.jpeg",
+    "room": 22
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 3,
+  "fields": {
+    "image": "images/room/3_NXbdpDD.jpg",
+    "room": 11
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 4,
+  "fields": {
+    "image": "images/room/4_2glKXV6.jpg",
+    "room": 12
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 5,
+  "fields": {
+    "image": "images/room/5_l01UwcQ.jpg",
+    "room": 16
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 6,
+  "fields": {
+    "image": "images/room/6_HtjbZFe.jpg",
+    "room": 17
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 7,
+  "fields": {
+    "image": "images/room/7_5GVyMDu.jpg",
+    "room": 9
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 8,
+  "fields": {
+    "image": "images/room/8_zCQmWaa.jpg",
+    "room": 10
   }
 },
 {
