@@ -1,3 +1,5 @@
+import datetime
+
 from django.db.models import QuerySet
 
 from backend.users.choices import UserType
@@ -73,3 +75,31 @@ class ReservationQuerySet(QuerySet):
 
     def from_room(self, room_id: int):
         return self.filter(room_id=room_id)
+
+    def from_date(self, date):
+        return self.filter(event_date=date)
+
+    def from_user(self, user_id: int):
+        return self.filter(requestor_id=user_id)
+
+    def today(self, val: bool):
+        return (
+            self.filter(event_date=datetime.date.today())
+            if val
+            else self.exclude(event_date=datetime.date.today())
+        )
+
+    def upcoming(self):
+        return self.filter(event_date__gte=datetime.date.today())
+
+    def past(self):
+        return self.filter(event_date__lt=datetime.date.today())
+
+    def accepted_by_department(self, is_accepted_department: bool):
+        return self.filter(is_accepted_department=is_accepted_department)
+
+    def accepted_by_imdc(self, is_accepted_imdc: bool):
+        return self.filter(is_accepted_imdc=is_accepted_imdc)
+
+    def accepted_by_president(self, is_accepted_president: bool):
+        return self.filter(is_accepted_president=is_accepted_president)
