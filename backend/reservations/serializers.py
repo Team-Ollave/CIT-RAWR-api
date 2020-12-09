@@ -41,6 +41,7 @@ class ReservationModelSerializer(serializers.ModelSerializer):
     status = serializers.SerializerMethodField()
     event_organizer_name = serializers.SerializerMethodField()
     requestor_data = UserModelSerializer(read_only=True, source="requestor")
+    room_data = RoomModelSerializer(source="room", read_only=True)
 
     class Meta:
         model = models.Reservation
