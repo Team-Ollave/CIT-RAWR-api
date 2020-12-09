@@ -117,6 +117,9 @@ class ReservationViewSet(
         if date := serializer.validated_data.get("date"):
             queryset = queryset.filter(event_date=date)
 
+        if user_id := serializer.validated_data.get("user_id"):
+            queryset = queryset.filter(requestor_id=user_id)
+
         if room := serializer.validated_data.get("room"):
             queryset = queryset.filter(room_id=room)
 
