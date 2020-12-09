@@ -78,7 +78,7 @@ class Reservation(models.Model):
 
     class Meta:
         default_related_name = "reservations"
-        ordering = ("room__name", "event_date", "start_time")
+        ordering = ("room__building__name", "room__name", "event_date", "start_time")
 
     def __str__(self):
         return f"{self.id} - {self.event_name} - {self.room.name}"
