@@ -36,6 +36,17 @@ class RoomModelSerializer(serializers.ModelSerializer):
         model = models.Room
         fields = "__all__"
 
+        extra_kwargs = {
+            "available_start_time": {
+                "format": "%H:%M",
+                "input_formats": ("%I:%M %p", "%H:%M"),
+            },
+            "available_end_time": {
+                "format": "%H:%M",
+                "input_formats": ("%I:%M %p", "%H:%M"),
+            },
+        }
+
 
 class ReservationModelSerializer(serializers.ModelSerializer):
     status = serializers.SerializerMethodField()
