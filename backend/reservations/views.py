@@ -68,21 +68,27 @@ class RoomViewSet(
         )
 
         if room_reservations:
-            for i in range(len(room_reservations) - 1):
-                if room_reservations[i].event_date == room_reservations[i + 1].event_date:
-                    event_date = room_reservations[i].event_date
+            if room_reservations[0].event_date == datetime.date.today():
+                for i in range(len(room_reservations) - 1):
                     if (
-                        datetime.datetime.combine(
-                            event_date, room_reservations[i + 1].start_time
-                        )
-                        - datetime.datetime.combine(
-                            event_date, room_reservations[i].end_time
-                        )
-                    ).total_seconds() > RESERVATION_MAX_HOURS:
-                        return Response(event_date)
-            return Response(
-                room_reservations.last().event_date + datetime.timedelta(days=1)
-            )
+                        room_reservations[i].event_date
+                        == room_reservations[i + 1].event_date
+                    ):
+                        event_date = room_reservations[i].event_date
+                        if (
+                            datetime.datetime.combine(
+                                event_date, room_reservations[i + 1].start_time
+                            )
+                            - datetime.datetime.combine(
+                                event_date, room_reservations[i].end_time
+                            )
+                        ).total_seconds() > RESERVATION_MAX_HOURS:
+                            return Response(event_date)
+                return Response(
+                    room_reservations.last().event_date + datetime.timedelta(days=1)
+                )
+            else:
+                return Response(datetime.date.today())
         else:
             return Response(datetime.date.today())
 
