@@ -30,7 +30,7 @@ class RoomImageModelSerializere(serializers.ModelSerializer):
 class RoomModelSerializer(serializers.ModelSerializer):
     room_images = RoomImageModelSerializere(many=True, read_only=True)
     is_generic = serializers.ReadOnlyField()
-    building = BuildingModelSerializer()
+    building_data = BuildingModelSerializer(source="building", read_only=True)
 
     class Meta:
         model = models.Room
