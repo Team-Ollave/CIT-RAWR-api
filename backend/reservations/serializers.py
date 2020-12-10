@@ -30,16 +30,29 @@ class RoomImageModelSerializere(serializers.ModelSerializer):
 class RoomModelSerializer(serializers.ModelSerializer):
     room_images = RoomImageModelSerializere(many=True, read_only=True)
     is_generic = serializers.ReadOnlyField()
+    building_data = BuildingModelSerializer(source="building", read_only=True)
 
     class Meta:
         model = models.Room
         fields = "__all__"
 
+        extra_kwargs = {
+            "available_start_time": {
+                "format": "%H:%M",
+                "input_formats": ("%I:%M %p", "%H:%M"),
+            },
+            "available_end_time": {
+                "format": "%H:%M",
+                "input_formats": ("%I:%M %p", "%H:%M"),
+            },
+        }
+
 
 class ReservationModelSerializer(serializers.ModelSerializer):
-    status = serializers.ReadOnlyField()
+    status = serializers.SerializerMethodField()
     event_organizer_name = serializers.SerializerMethodField()
     requestor_data = UserModelSerializer(read_only=True, source="requestor")
+    room_data = RoomModelSerializer(source="room", read_only=True)
 
     class Meta:
         model = models.Reservation
@@ -58,6 +71,40 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             },
             "event_date": {"input_formats": ("%m-%d-%Y", "%Y-%m-%d")},
         }
+
+    def get_status(self, obj):
+        user_type = self.context.get("for_user_type")
+        if user_type == UserType.DEPARTMENT:
+            if obj.is_accepted_department is True:
+                return choices.ReservationStatus.ACCEPTED
+            elif obj.is_accepted_department is False:
+                return choices.ReservationStatus.DECLINED
+
+            return choices.ReservationStatus.PENDING
+        if user_type == UserType.IMDC:
+            if obj.is_accepted_department is True and obj.is_accepted_imdc is True:
+                return choices.ReservationStatus.ACCEPTED
+            elif obj.is_accepted_department is True and obj.is_accepted_imdc is False:
+                return choices.ReservationStatus.DECLINED
+
+            return choices.ReservationStatus.PENDING
+        if user_type == UserType.PRESIDENT:
+            if (
+                obj.is_accepted_department is True
+                and obj.is_accepted_imdc is True
+                and obj.is_accepted_president is True
+            ):
+                return choices.ReservationStatus.ACCEPTED
+            if (
+                obj.is_accepted_department is True
+                and obj.is_accepted_imdc is True
+                and obj.is_accepted_department is False
+            ):
+                return choices.ReservationStatus.DECLINED
+
+            return choices.ReservationStatus.PENDING
+
+        return obj.status
 
     def get_event_organizer_name(self, obj):
         try:
@@ -104,6 +151,7 @@ class ReservationQuerySerializer(serializers.Serializer):
     department_id = serializers.IntegerField(required=False)
     for_user_type = serializers.CharField(required=False)
     room = serializers.IntegerField(required=False)
+    user_id = serializers.IntegerField(required=False)
 
     date = serializers.DateField(required=False)
     upcoming = serializers.BooleanField(required=False)

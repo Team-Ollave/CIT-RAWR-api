@@ -2132,6 +2132,565 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 165,
+  "fields": {
+    "action_time": "2020-12-09T15:10:41.035Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "15 - Accepted Tomorrow",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 166,
+  "fields": {
+    "action_time": "2020-12-09T15:11:06.214Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "14 - Accepted Today 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 167,
+  "fields": {
+    "action_time": "2020-12-09T15:11:13.348Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - Accepted Today",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 168,
+  "fields": {
+    "action_time": "2020-12-09T15:11:21.181Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "17 - Accepted Other Day 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 169,
+  "fields": {
+    "action_time": "2020-12-09T15:11:26.052Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - Accepted Today",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 170,
+  "fields": {
+    "action_time": "2020-12-09T15:11:48.540Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "15 - Accepted Tomorrow",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 171,
+  "fields": {
+    "action_time": "2020-12-09T16:56:24.703Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - DSC Weekly Meeting",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\", \"Event description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 172,
+  "fields": {
+    "action_time": "2020-12-09T17:04:03.583Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "18",
+    "object_repr": "18 - CCS Orientation Meeting - CREATE Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 173,
+  "fields": {
+    "action_time": "2020-12-09T17:16:25.341Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "19",
+    "object_repr": "19 - PSITE Christmas Party - CREATE Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 174,
+  "fields": {
+    "action_time": "2020-12-09T17:18:56.354Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "20",
+    "object_repr": "20 - PSITE Commissioners Meeting - CREATE Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 175,
+  "fields": {
+    "action_time": "2020-12-09T17:22:02.114Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "21 - 10-Loyalty Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 176,
+  "fields": {
+    "action_time": "2020-12-09T17:23:38.645Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "22",
+    "object_repr": "22 - 10 - Justice Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 177,
+  "fields": {
+    "action_time": "2020-12-09T17:23:52.367Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "21 - 10 - Loyalty Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 178,
+  "fields": {
+    "action_time": "2020-12-09T17:24:14.051Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "21 - 12 - Loyalty Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 179,
+  "fields": {
+    "action_time": "2020-12-09T17:24:22.130Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "22",
+    "object_repr": "22 - 12 - Justice Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 180,
+  "fields": {
+    "action_time": "2020-12-09T17:25:13.883Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "21 - 10-Loyalty Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 181,
+  "fields": {
+    "action_time": "2020-12-09T17:25:27.708Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "21 - 12 - Loyalty Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 182,
+  "fields": {
+    "action_time": "2020-12-09T17:27:28.887Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "23",
+    "object_repr": "23 - 12 - Modesty Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 183,
+  "fields": {
+    "action_time": "2020-12-09T17:29:05.078Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "24",
+    "object_repr": "24 - 12 - Obidence Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 184,
+  "fields": {
+    "action_time": "2020-12-09T17:30:43.187Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "25",
+    "object_repr": "25 - 12 - Generosity Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 185,
+  "fields": {
+    "action_time": "2020-12-09T17:32:24.012Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "26",
+    "object_repr": "26 - CS Teacher's Meeting - CREATE Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 186,
+  "fields": {
+    "action_time": "2020-12-09T17:33:17.567Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "27",
+    "object_repr": "27 - IT Teacher's Meeting - CREATE Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 187,
+  "fields": {
+    "action_time": "2020-12-09T17:42:38.037Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "28",
+    "object_repr": "28 - HRM100 Cooking Competition - Golden Gear Hotel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 188,
+  "fields": {
+    "action_time": "2020-12-09T17:43:28.229Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "29",
+    "object_repr": "29 - HM101 Flairtending Competition - Golden Gear Hotel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 189,
+  "fields": {
+    "action_time": "2020-12-09T17:44:47.849Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "30",
+    "object_repr": "30 - Bedmaking Competition - Golden Gear Hotel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 190,
+  "fields": {
+    "action_time": "2020-12-09T17:45:29.388Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "22 - Engineering Building - Tourism Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 191,
+  "fields": {
+    "action_time": "2020-12-09T17:45:38.009Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "22 - Engineering Building - Conference Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 192,
+  "fields": {
+    "action_time": "2020-12-09T17:46:04.964Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "11 - College Library - Library Upper Floor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 193,
+  "fields": {
+    "action_time": "2020-12-09T17:46:14.219Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "12 - College Library - Annex Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 194,
+  "fields": {
+    "action_time": "2020-12-09T17:46:34.011Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "17 - Main Building - Main Featured Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 195,
+  "fields": {
+    "action_time": "2020-12-09T17:50:31.676Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "31",
+    "object_repr": "31 - 1st CIT Conference - Conference Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 196,
+  "fields": {
+    "action_time": "2020-12-09T17:51:17.780Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "32",
+    "object_repr": "32 - 2nd CIT Conference - Conference Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 197,
+  "fields": {
+    "action_time": "2020-12-09T18:07:21.259Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "33",
+    "object_repr": "33 - BSCS-1 F1 Library Work - Library Upper Floor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 198,
+  "fields": {
+    "action_time": "2020-12-09T18:14:35.696Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "34",
+    "object_repr": "34 - BSCS-1 F2 Library Work - Library Upper Floor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 199,
+  "fields": {
+    "action_time": "2020-12-09T18:17:10.969Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "35",
+    "object_repr": "35 - BSCS-1 F3 Library Work - Library Upper Floor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 200,
+  "fields": {
+    "action_time": "2020-12-09T18:22:34.591Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "RoomImage object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 201,
+  "fields": {
+    "action_time": "2020-12-09T18:22:44.754Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "RoomImage object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 202,
+  "fields": {
+    "action_time": "2020-12-09T18:22:54.221Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "RoomImage object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 203,
+  "fields": {
+    "action_time": "2020-12-09T18:23:09.114Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "RoomImage object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 204,
+  "fields": {
+    "action_time": "2020-12-09T18:23:27.128Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "RoomImage object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 205,
+  "fields": {
+    "action_time": "2020-12-09T18:23:41.236Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "RoomImage object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 206,
+  "fields": {
+    "action_time": "2020-12-09T18:24:15.994Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "RoomImage object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 207,
+  "fields": {
+    "action_time": "2020-12-09T18:24:38.071Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "RoomImage object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -2669,6 +3228,14 @@
 },
 {
   "model": "sessions.session",
+  "pk": "3et9c3v1pn78yz0l6p5uyeg3r39ylv92",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGllevjdK-pzB8veCA8iW4qRC3J1ESgHtm5n3Jj5sa_XbyIufE7kSTi6_G4b4zO0A6RHavdPY27rMSA-FnnTQqaf8up3u30ENo-61DALAKV5c4VqgUppJC0w7WVyIBpWwyJIw0UCxJYu8kygxI6JgUIB8vrtfN3g:1kmuaG:X1dR7rNoSKMBWJeZqCZ-Wt1oxl-p_93jRza6O_0Vilc",
+    "expire_date": "2020-12-23T08:12:24.085Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "hola0a4hceocd3u9tksgecwgtxfgy3c7",
   "fields": {
     "session_data": ".eJxVjDkOwjAUBe_iGllevjdK-pzB8veCA8iW4qRC3J1ESgHtm5n3Jj5sa_XbyIufE7kSTi6_G4b4zO0A6RHavdPY27rMSA-FnnTQqaf8up3u30ENo-61DALAKV5c4VqgUppJC0w7WVyIBpWwyJIw0UCxJYu8kygxI6JgUIB8vrtfN3g:1kmaXv:fA5IgNXEgdVfeTHrQGY9D844GZ5zCfYf1cD82uWn0pI",
@@ -2794,7 +3361,7 @@
   "model": "reservations.room",
   "pk": 11,
   "fields": {
-    "name": "Special Room",
+    "name": "Library Upper Floor",
     "available_start_time": "12:00:00",
     "available_end_time": "17:00:00",
     "building": 3,
@@ -2806,7 +3373,7 @@
   "model": "reservations.room",
   "pk": 12,
   "fields": {
-    "name": "Special Room 2",
+    "name": "Annex Room",
     "available_start_time": "07:00:00",
     "available_end_time": "12:00:00",
     "building": 3,
@@ -2830,7 +3397,7 @@
   "model": "reservations.room",
   "pk": 17,
   "fields": {
-    "name": "Featured Room",
+    "name": "Main Featured Room",
     "available_start_time": "12:00:00",
     "available_end_time": "17:00:00",
     "building": 2,
@@ -2854,12 +3421,76 @@
   "model": "reservations.room",
   "pk": 22,
   "fields": {
-    "name": "Featured Room",
+    "name": "Conference Room",
     "available_start_time": "07:00:00",
     "available_end_time": "15:00:00",
     "building": 4,
     "room_category": null,
     "department": 12
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 1,
+  "fields": {
+    "image": "images/room/1_f13i2K2.jpg",
+    "room": 21
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 2,
+  "fields": {
+    "image": "images/room/2_23dp6in.jpeg",
+    "room": 22
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 3,
+  "fields": {
+    "image": "images/room/3_NXbdpDD.jpg",
+    "room": 11
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 4,
+  "fields": {
+    "image": "images/room/4_2glKXV6.jpg",
+    "room": 12
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 5,
+  "fields": {
+    "image": "images/room/5_l01UwcQ.jpg",
+    "room": 16
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 6,
+  "fields": {
+    "image": "images/room/6_HtjbZFe.jpg",
+    "room": 17
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 7,
+  "fields": {
+    "image": "images/room/7_5GVyMDu.jpg",
+    "room": 9
+  }
+},
+{
+  "model": "reservations.roomimage",
+  "pk": 8,
+  "fields": {
+    "image": "images/room/8_zCQmWaa.jpg",
+    "room": 10
   }
 },
 {
@@ -3082,12 +3713,12 @@
   "model": "reservations.reservation",
   "pk": 13,
   "fields": {
-    "event_name": "Accepted Today",
-    "event_date": "2020-12-01",
+    "event_name": "DSC Weekly Meeting",
+    "event_date": "2020-12-10",
     "start_time": "07:00:00",
     "end_time": "12:00:00",
     "date_registered": "2020-11-30T17:20:25.256Z",
-    "event_description": "This is Accepted Today Reservation",
+    "event_description": "This is the DSC Weekly Meeting",
     "attendees_count": 0,
     "is_accepted_department": true,
     "is_accepted_imdc": true,
@@ -3101,7 +3732,7 @@
   "pk": 14,
   "fields": {
     "event_name": "Accepted Today 2",
-    "event_date": "2020-12-01",
+    "event_date": "2020-12-10",
     "start_time": "13:00:00",
     "end_time": "17:00:00",
     "date_registered": "2020-11-30T17:21:23.759Z",
@@ -3119,7 +3750,7 @@
   "pk": 15,
   "fields": {
     "event_name": "Accepted Tomorrow",
-    "event_date": "2020-12-02",
+    "event_date": "2020-12-11",
     "start_time": "12:00:00",
     "end_time": "14:00:00",
     "date_registered": "2020-11-30T17:22:28.948Z",
@@ -3155,7 +3786,7 @@
   "pk": 17,
   "fields": {
     "event_name": "Accepted Other Day 2",
-    "event_date": "2020-12-03",
+    "event_date": "2020-12-10",
     "start_time": "07:00:00",
     "end_time": "12:00:00",
     "date_registered": "2020-11-30T17:23:38.748Z",
@@ -3165,6 +3796,330 @@
     "is_accepted_imdc": true,
     "is_accepted_president": true,
     "room": 9,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 18,
+  "fields": {
+    "event_name": "CCS Orientation Meeting",
+    "event_date": "2020-12-14",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-12-09T17:04:03.567Z",
+    "event_description": "This is the CCS Orientation Meeting",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 10,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 19,
+  "fields": {
+    "event_name": "PSITE Christmas Party",
+    "event_date": "2020-12-14",
+    "start_time": "13:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-12-09T17:16:25.332Z",
+    "event_description": "PSITE Christmas Party. Happy Holidays!",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 10,
+    "requestor": 8
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 20,
+  "fields": {
+    "event_name": "PSITE Commissioners Meeting",
+    "event_date": "2020-12-16",
+    "start_time": "07:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-12-09T17:18:56.348Z",
+    "event_description": "PSITE Commissioners Meeting. The big ones are here. Please let them in.",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 10,
+    "requestor": 3
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 21,
+  "fields": {
+    "event_name": "12 - Loyalty Theatre Practice",
+    "event_date": "2020-12-14",
+    "start_time": "07:30:00",
+    "end_time": "10:30:00",
+    "date_registered": "2020-12-09T17:22:02.107Z",
+    "event_description": "10-Loyalty Theatre Practice from 7:30 to 10:30",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 16,
+    "requestor": 2
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 22,
+  "fields": {
+    "event_name": "12 - Justice Theatre Practice",
+    "event_date": "2020-12-14",
+    "start_time": "10:30:00",
+    "end_time": "12:30:00",
+    "date_registered": "2020-12-09T17:23:38.633Z",
+    "event_description": "10 - Justice Theatre Practice from 10:30 to 12:30",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 16,
+    "requestor": 2
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 23,
+  "fields": {
+    "event_name": "12 - Modesty Theatre Practice",
+    "event_date": "2020-12-13",
+    "start_time": "13:00:00",
+    "end_time": "15:00:00",
+    "date_registered": "2020-12-09T17:27:28.874Z",
+    "event_description": "12 - Modesty Theatre Practice from 1:00 to 3:00",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 16,
+    "requestor": 2
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 24,
+  "fields": {
+    "event_name": "12 - Obidence Theatre Practice",
+    "event_date": "2020-12-15",
+    "start_time": "15:00:00",
+    "end_time": "17:00:00",
+    "date_registered": "2020-12-09T17:29:05.075Z",
+    "event_description": "12 - Obidence Theatre Practice from 3:00 to 5:00",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 16,
+    "requestor": 2
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 25,
+  "fields": {
+    "event_name": "12 - Generosity Theatre Practice",
+    "event_date": "2020-12-10",
+    "start_time": "07:00:00",
+    "end_time": "10:00:00",
+    "date_registered": "2020-12-09T17:30:43.181Z",
+    "event_description": "12 - Generosity Theatre Practice from 7:00 to 10:00",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 16,
+    "requestor": 2
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 26,
+  "fields": {
+    "event_name": "CS Teacher's Meeting",
+    "event_date": "2020-12-10",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-12-09T17:32:24.005Z",
+    "event_description": "Meeting for Computer Science Teachers",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 10,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 27,
+  "fields": {
+    "event_name": "IT Teacher's Meeting",
+    "event_date": "2020-12-10",
+    "start_time": "13:00:00",
+    "end_time": "15:00:00",
+    "date_registered": "2020-12-09T17:33:17.558Z",
+    "event_description": "Meeting for teachers in IT",
+    "attendees_count": 0,
+    "is_accepted_department": null,
+    "is_accepted_imdc": null,
+    "is_accepted_president": null,
+    "room": 10,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 28,
+  "fields": {
+    "event_name": "HRM100 Cooking Competition",
+    "event_date": "2020-12-11",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-12-09T17:42:38.035Z",
+    "event_description": "This is the HRM100 Cooking Competition",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 21,
+    "requestor": 7
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 29,
+  "fields": {
+    "event_name": "HM101 Flairtending Competition",
+    "event_date": "2020-12-11",
+    "start_time": "12:00:00",
+    "end_time": "14:00:00",
+    "date_registered": "2020-12-09T17:43:28.219Z",
+    "event_description": "HM101 Flairtending Competition",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 21,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 30,
+  "fields": {
+    "event_name": "Bedmaking Competition",
+    "event_date": "2020-12-10",
+    "start_time": "07:00:00",
+    "end_time": "15:00:00",
+    "date_registered": "2020-12-09T17:44:47.844Z",
+    "event_description": "This is the Bedmaking Competition",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 21,
+    "requestor": 8
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 31,
+  "fields": {
+    "event_name": "1st CIT Conference",
+    "event_date": "2021-01-13",
+    "start_time": "08:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-12-09T17:50:31.672Z",
+    "event_description": "This is the 1st CIT Conference",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 22,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 32,
+  "fields": {
+    "event_name": "2nd CIT Conference",
+    "event_date": "2021-01-04",
+    "start_time": "08:00:00",
+    "end_time": "15:00:00",
+    "date_registered": "2020-12-09T17:51:17.772Z",
+    "event_description": "This is the 2nd CIT Conference",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 22,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 33,
+  "fields": {
+    "event_name": "BSCS-1 F1 Library Work",
+    "event_date": "2020-12-10",
+    "start_time": "08:00:00",
+    "end_time": "10:00:00",
+    "date_registered": "2020-12-09T18:07:21.255Z",
+    "event_description": "This is BSCS-1 F1 Library Work",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 11,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 34,
+  "fields": {
+    "event_name": "BSCS-1 F2 Library Work",
+    "event_date": "2020-12-10",
+    "start_time": "10:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-12-09T18:14:35.691Z",
+    "event_description": "BSCS-1 F2 Library Work",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 11,
+    "requestor": 6
+  }
+},
+{
+  "model": "reservations.reservation",
+  "pk": 35,
+  "fields": {
+    "event_name": "BSCS-1 F3 Library Work",
+    "event_date": "2021-01-05",
+    "start_time": "07:00:00",
+    "end_time": "12:00:00",
+    "date_registered": "2020-12-09T18:17:10.964Z",
+    "event_description": "This is BSCS-1 F3 Library Work",
+    "attendees_count": 0,
+    "is_accepted_department": true,
+    "is_accepted_imdc": true,
+    "is_accepted_president": true,
+    "room": 11,
     "requestor": 7
   }
 },
@@ -3313,7 +4268,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$216000$z8vA4dmOyv4F$LrUCmznwRn7JhWfpWhV5yAYZ/zwhOVW5aX8uZr8YBGM=",
-    "last_login": "2020-12-08T10:48:39.642Z",
+    "last_login": "2020-12-09T08:12:24.083Z",
     "is_superuser": true,
     "email": "admin@email.com",
     "profile": null,

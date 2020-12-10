@@ -5,6 +5,4 @@ __pycache__/
 .vscode/
 .vim/
 
-media/
-
 db.sqlite3
