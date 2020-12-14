@@ -11,5 +11,6 @@ ROUTER.register("reservations", views.ReservationViewSet)
 ROUTER.register("rooms", views.RoomViewSet)
 ROUTER.register("room-images", views.RoomImageViewSet)
 ROUTER.register("room-categories", views.RoomCategoryViewSet)
+ROUTER.register("notifications", views.NotificationViewSet)
 
 urlpatterns = path("", include(ROUTER.urls))

@@ -147,6 +147,12 @@ class ReservationModelSerializer(serializers.ModelSerializer):
         return attrs
 
 
+class NotificationModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Notification
+        fields = "__all__"
+
+
 class ReservationQuerySerializer(serializers.Serializer):
     department_id = serializers.IntegerField(required=False)
     for_user_type = serializers.CharField(required=False)
@@ -183,6 +189,11 @@ class RoomsQuerySerializer(serializers.Serializer):
     has_reservations = serializers.BooleanField(
         required=False, allow_null=True, default=None
     )
+
+
+class NotificationQuerySerializer(serializers.Serializer):
+    user = serializers.IntegerField(required=False)
+    reservation = serializers.IntegerField(required=False)
 
 
 class EarliestAvailabilitySerializer(serializers.Serializer):

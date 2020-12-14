@@ -2,7 +2,7 @@ from django.db import models
 
 from backend.constants import DEFAULT_MAX_LENGTH, MEDIUM_TEXT_MAX_LENGTH
 from backend.reservations.choices import ReservationStatus
-from backend.reservations.querysets import ReservationQuerySet
+from backend.reservations.querysets import NotificationQuerySet, ReservationQuerySet
 from backend.users.models import User
 
 
@@ -123,3 +123,15 @@ class Reservation(models.Model):
             or self.is_accepted_imdc is False
             or self.is_accepted_president is False
         )
+
+
+class Notification(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    reservation = models.ForeignKey("reservations.Reservation", on_delete=models.CASCADE)
+    is_seen = models.BooleanField(default=False)
+    datetime_created = models.DateTimeField(auto_now_add=True)
+
+    objects = NotificationQuerySet.as_manager()
+
+    def __str__(self):
+        return f"{self.id} - {self.reservation}"
