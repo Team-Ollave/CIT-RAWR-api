@@ -69,7 +69,7 @@ class RoomViewSet(
 
         if room_reservations:
             if room_reservations[0].event_date == datetime.date.today():
-                for i in range(len(room_reservations) - 1):
+                for i in range(len(room_reservations)):
                     if (
                         room_reservations[i].event_date
                         == room_reservations[i + 1].event_date
