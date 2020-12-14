@@ -38,11 +38,11 @@ class RoomModelSerializer(serializers.ModelSerializer):
 
         extra_kwargs = {
             "available_start_time": {
-                "format": "%H:%M",
+                "format": "%-I:%M %p",
                 "input_formats": ("%I:%M %p", "%H:%M"),
             },
             "available_end_time": {
-                "format": "%H:%M",
+                "format": "%-I:%M %p",
                 "input_formats": ("%I:%M %p", "%H:%M"),
             },
         }
@@ -62,11 +62,11 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             "is_accepted_imdc": {"default": None},
             "is_accepted_president": {"default": None},
             "start_time": {
-                "format": "%H:%M",
+                "format": "%-I:%M %p",
                 "input_formats": ("%I:%M %p", "%H:%M"),
             },
             "end_time": {
-                "format": "%H:%M",
+                "format": "%-I:%M %p",
                 "input_formats": ("%I:%M %p", "%H:%M"),
             },
             "event_date": {"input_formats": ("%m-%d-%Y", "%Y-%m-%d")},
