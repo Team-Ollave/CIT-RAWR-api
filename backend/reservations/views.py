@@ -1,4 +1,5 @@
 import datetime
+from functools import reduce
 
 from rest_framework import mixins, status, viewsets
 from rest_framework.decorators import action
@@ -100,6 +101,34 @@ class RoomViewSet(
                 return Response(datetime.date.today())
         else:
             return Response(datetime.date.today())
+
+    @action(methods=["GET"], detail=True, url_path="earliest-availability-v2")
+    def earliest_availability_v2(self, request, pk):
+        try:
+            room = models.Room.objects.get(id=pk)
+        except models.Room.DoesNotExist:
+            return Response("Room does not exist", status=status.HTTP_400_BAD_REQUEST)
+        earliest_availability_date = None
+        date_counter = datetime.date.today()
+        while not earliest_availability_date:
+            room_reservations = (
+                models.Reservation.objects.from_room(pk)
+                .accepted()
+                .filter(event_date=date_counter)
+                .order_by("event_date", "start_time")
+            )
+            if room_reservations:
+                total_events_hours = reduce(
+                    lambda current, next: current.event_time_length
+                    + next.event_time_length,
+                    room_reservations,
+                )
+                if total_events_hours < room.max_hours:
+                    earliest_availability_date = date_counter
+            else:
+                earliest_availability_date = date_counter
+            date_counter += datetime.timedelta(days=1)
+        return Response(earliest_availability_date)
 
 
 class ReservationViewSet(

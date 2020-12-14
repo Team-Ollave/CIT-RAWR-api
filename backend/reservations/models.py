@@ -1,6 +1,8 @@
+from datetime import datetime
+
 from django.db import models
 
-from backend.constants import DEFAULT_MAX_LENGTH, MEDIUM_TEXT_MAX_LENGTH
+from backend.constants import DEFAULT_MAX_LENGTH, FMT, MEDIUM_TEXT_MAX_LENGTH
 from backend.reservations.choices import ReservationStatus
 from backend.reservations.querysets import NotificationQuerySet, ReservationQuerySet
 from backend.users.models import User
@@ -44,6 +46,12 @@ class Room(models.Model):
     @property
     def is_generic(self):
         return self.room_category is not None
+
+    @property
+    def max_hours(self):
+        return datetime.strptime(str(self.available_end_time), FMT) - datetime.strptime(
+            str(self.available_start_time), FMT
+        )
 
     def __str__(self):
         return f"{self.id} - {self.building} - {self.name}"
@@ -122,6 +130,12 @@ class Reservation(models.Model):
             self.is_accepted_department is False
             or self.is_accepted_imdc is False
             or self.is_accepted_president is False
+        )
+
+    @property
+    def event_time_length(self):
+        return datetime.strptime(str(self.end_time), FMT) - datetime.strptime(
+            str(self.start_time), FMT
         )
 
 
