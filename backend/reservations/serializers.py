@@ -147,17 +147,6 @@ class ReservationModelSerializer(serializers.ModelSerializer):
         return attrs
 
 
-class NotificationModelSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.Notification
-        fields = "__all__"
-        extra_kwargs = {
-            "datetime_created": {
-                "format": "%a %b %d, %Y | %-I:%M %p",
-            },
-        }
-
-
 class ReservationQuerySerializer(serializers.Serializer):
     department_id = serializers.IntegerField(required=False)
     for_user_type = serializers.CharField(required=False)
@@ -187,6 +176,19 @@ class ReservationQuerySerializer(serializers.Serializer):
             raise serializers.ValidationError("for_user_type value is invalid.")
 
         return attrs
+
+
+class NotificationModelSerializer(serializers.ModelSerializer):
+    reservation_data = ReservationModelSerializer(source="reservation", read_only=True)
+
+    class Meta:
+        model = models.Notification
+        fields = "__all__"
+        extra_kwargs = {
+            "datetime_created": {
+                "format": "%a %b %d, %Y | %-I:%M %p",
+            },
+        }
 
 
 class RoomsQuerySerializer(serializers.Serializer):
