@@ -114,7 +114,9 @@ class RoomViewSet(
                     + next.event_time_length,
                     room_reservations,
                 )
-                if total_events_hours < room.max_hours:
+                if (datetime.today() + total_events_hours) < (
+                    datetime.today() + room.max_hours
+                ):
                     earliest_availability_date = date_counter
             else:
                 earliest_availability_date = date_counter
