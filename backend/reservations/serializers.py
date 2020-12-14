@@ -98,7 +98,7 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             if (
                 obj.is_accepted_department is True
                 and obj.is_accepted_imdc is True
-                and obj.is_accepted_department is False
+                and obj.is_accepted_president is False
             ):
                 return choices.ReservationStatus.DECLINED
 
