@@ -3306,37 +3306,37 @@
 },
 {
   "model": "auth.permission",
-  "pk": 49,
+  "pk": 53,
   "fields": {
     "name": "Can add notification",
-    "content_type": 13,
+    "content_type": 14,
     "codename": "add_notification"
   }
 },
 {
   "model": "auth.permission",
-  "pk": 50,
+  "pk": 54,
   "fields": {
     "name": "Can change notification",
-    "content_type": 13,
+    "content_type": 14,
     "codename": "change_notification"
   }
 },
 {
   "model": "auth.permission",
-  "pk": 51,
+  "pk": 55,
   "fields": {
     "name": "Can delete notification",
-    "content_type": 13,
+    "content_type": 14,
     "codename": "delete_notification"
   }
 },
 {
   "model": "auth.permission",
-  "pk": 52,
+  "pk": 56,
   "fields": {
     "name": "Can view notification",
-    "content_type": 13,
+    "content_type": 14,
     "codename": "view_notification"
   }
 },
@@ -3438,7 +3438,7 @@
 },
 {
   "model": "contenttypes.contenttype",
-  "pk": 13,
+  "pk": 14,
   "fields": {
     "app_label": "reservations",
     "model": "notification"
@@ -3466,6 +3466,14 @@
   "fields": {
     "session_data": ".eJxVjDkOwjAUBe_iGllevjdK-pzB8veCA8iW4qRC3J1ESgHtm5n3Jj5sa_XbyIufE7kSTi6_G4b4zO0A6RHavdPY27rMSA-FnnTQqaf8up3u30ENo-61DALAKV5c4VqgUppJC0w7WVyIBpWwyJIw0UCxJYu8kygxI6JgUIB8vrtfN3g:1kmaXv:fA5IgNXEgdVfeTHrQGY9D844GZ5zCfYf1cD82uWn0pI",
     "expire_date": "2020-12-22T10:48:39.662Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qaowa40zmhdci13x421nwnpldxsdfr6g",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGllevjdK-pzB8veCA8iW4qRC3J1ESgHtm5n3Jj5sa_XbyIufE7kSTi6_G4b4zO0A6RHavdPY27rMSA-FnnTQqaf8up3u30ENo-61DALAKV5c4VqgUppJC0w7WVyIBpWwyJIw0UCxJYu8kygxI6JgUIB8vrtfN3g:1koqgk:oWwdCV2n-PY0i_im6-OrIgOoKblexoWKwOM82Cg0W5E",
+    "expire_date": "2020-12-28T16:27:06.461Z"
   }
 },
 {
@@ -4355,26 +4363,6 @@
     "is_accepted_president": true,
     "room": 11,
     "requestor": 7
-  }
-},
-{
-  "model": "reservations.notification",
-  "pk": 1,
-  "fields": {
-    "user": 9,
-    "reservation": 4,
-    "is_seen": false,
-    "datetime_created": "2020-12-14T08:18:30.417Z"
-  }
-},
-{
-  "model": "reservations.notification",
-  "pk": 2,
-  "fields": {
-    "user": 9,
-    "reservation": 4,
-    "is_seen": false,
-    "datetime_created": "2020-12-14T08:19:43.161Z"
   }
 },
 {
