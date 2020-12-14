@@ -2691,6 +2691,188 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 208,
+  "fields": {
+    "action_time": "2020-12-14T16:02:29.142Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "33",
+    "object_repr": "33 - BSCS-1 F1 Library Work - Library Upper Floor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 209,
+  "fields": {
+    "action_time": "2020-12-14T16:02:37.818Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "33",
+    "object_repr": "33 - BSCS-1 F1 Library Work - Library Upper Floor",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 210,
+  "fields": {
+    "action_time": "2020-12-14T16:03:19.761Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "19",
+    "object_repr": "19 - PSITE Christmas Party - CREATE Room",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 211,
+  "fields": {
+    "action_time": "2020-12-14T16:03:39.499Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "27",
+    "object_repr": "27 - IT Teacher's Meeting - CREATE Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 212,
+  "fields": {
+    "action_time": "2020-12-14T16:03:52.748Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "26",
+    "object_repr": "26 - CS Teacher's Meeting - CREATE Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 213,
+  "fields": {
+    "action_time": "2020-12-14T16:04:13.486Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "15 - Accepted Tomorrow - Case Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 214,
+  "fields": {
+    "action_time": "2020-12-14T16:04:22.040Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "14 - Accepted Today 2 - Case Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 215,
+  "fields": {
+    "action_time": "2020-12-14T16:04:33.545Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "13 - DSC Weekly Meeting - Case Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 216,
+  "fields": {
+    "action_time": "2020-12-14T16:04:44.985Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "17 - Accepted Other Day 2 - Case Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 217,
+  "fields": {
+    "action_time": "2020-12-14T16:04:52.643Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "15 - Accepted Tomorrow - Case Room",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 218,
+  "fields": {
+    "action_time": "2020-12-14T16:04:59.218Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "14 - Accepted Today 2 - Case Room",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 219,
+  "fields": {
+    "action_time": "2020-12-14T16:05:37.975Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "25",
+    "object_repr": "25 - 12 - Generosity Theatre Practice - Mass Communication Theater Room",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 220,
+  "fields": {
+    "action_time": "2020-12-14T16:05:53.986Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "30",
+    "object_repr": "30 - Bedmaking Competition - Golden Gear Hotel",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 221,
+  "fields": {
+    "action_time": "2020-12-14T16:06:13.849Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "34",
+    "object_repr": "34 - BSCS-1 F2 Library Work - Library Upper Floor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Event date\"]}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -3123,6 +3305,42 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add notification",
+    "content_type": 13,
+    "codename": "add_notification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change notification",
+    "content_type": 13,
+    "codename": "change_notification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete notification",
+    "content_type": 13,
+    "codename": "delete_notification"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view notification",
+    "content_type": 13,
+    "codename": "view_notification"
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -3219,6 +3437,14 @@
   }
 },
 {
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "reservations",
+    "model": "notification"
+  }
+},
+{
   "model": "sessions.session",
   "pk": "0ow70dqc89vjiriwle2bm5acq6s4032w",
   "fields": {
@@ -3240,6 +3466,14 @@
   "fields": {
     "session_data": ".eJxVjDkOwjAUBe_iGllevjdK-pzB8veCA8iW4qRC3J1ESgHtm5n3Jj5sa_XbyIufE7kSTi6_G4b4zO0A6RHavdPY27rMSA-FnnTQqaf8up3u30ENo-61DALAKV5c4VqgUppJC0w7WVyIBpWwyJIw0UCxJYu8kygxI6JgUIB8vrtfN3g:1kmaXv:fA5IgNXEgdVfeTHrQGY9D844GZ5zCfYf1cD82uWn0pI",
     "expire_date": "2020-12-22T10:48:39.662Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rah83t3w69wbdho0xxdfhzgzg6ft53e2",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGllevjdK-pzB8veCA8iW4qRC3J1ESgHtm5n3Jj5sa_XbyIufE7kSTi6_G4b4zO0A6RHavdPY27rMSA-FnnTQqaf8up3u30ENo-61DALAKV5c4VqgUppJC0w7WVyIBpWwyJIw0UCxJYu8kygxI6JgUIB8vrtfN3g:1koj3Z:6AypFgkNPGhmmpjrYlnyFX5Ia90j0AJ-6U0AjO2W4G8",
+    "expire_date": "2020-12-28T08:18:09.048Z"
   }
 },
 {
@@ -3714,7 +3948,7 @@
   "pk": 13,
   "fields": {
     "event_name": "DSC Weekly Meeting",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "07:00:00",
     "end_time": "12:00:00",
     "date_registered": "2020-11-30T17:20:25.256Z",
@@ -3732,7 +3966,7 @@
   "pk": 14,
   "fields": {
     "event_name": "Accepted Today 2",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "13:00:00",
     "end_time": "17:00:00",
     "date_registered": "2020-11-30T17:21:23.759Z",
@@ -3750,7 +3984,7 @@
   "pk": 15,
   "fields": {
     "event_name": "Accepted Tomorrow",
-    "event_date": "2020-12-11",
+    "event_date": "2020-12-16",
     "start_time": "12:00:00",
     "end_time": "14:00:00",
     "date_registered": "2020-11-30T17:22:28.948Z",
@@ -3786,7 +4020,7 @@
   "pk": 17,
   "fields": {
     "event_name": "Accepted Other Day 2",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-17",
     "start_time": "07:00:00",
     "end_time": "12:00:00",
     "date_registered": "2020-11-30T17:23:38.748Z",
@@ -3930,7 +4164,7 @@
   "pk": 25,
   "fields": {
     "event_name": "12 - Generosity Theatre Practice",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "07:00:00",
     "end_time": "10:00:00",
     "date_registered": "2020-12-09T17:30:43.181Z",
@@ -3948,7 +4182,7 @@
   "pk": 26,
   "fields": {
     "event_name": "CS Teacher's Meeting",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "07:00:00",
     "end_time": "12:00:00",
     "date_registered": "2020-12-09T17:32:24.005Z",
@@ -3966,7 +4200,7 @@
   "pk": 27,
   "fields": {
     "event_name": "IT Teacher's Meeting",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "13:00:00",
     "end_time": "15:00:00",
     "date_registered": "2020-12-09T17:33:17.558Z",
@@ -4020,7 +4254,7 @@
   "pk": 30,
   "fields": {
     "event_name": "Bedmaking Competition",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "07:00:00",
     "end_time": "15:00:00",
     "date_registered": "2020-12-09T17:44:47.844Z",
@@ -4074,7 +4308,7 @@
   "pk": 33,
   "fields": {
     "event_name": "BSCS-1 F1 Library Work",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "08:00:00",
     "end_time": "10:00:00",
     "date_registered": "2020-12-09T18:07:21.255Z",
@@ -4092,7 +4326,7 @@
   "pk": 34,
   "fields": {
     "event_name": "BSCS-1 F2 Library Work",
-    "event_date": "2020-12-10",
+    "event_date": "2020-12-15",
     "start_time": "10:00:00",
     "end_time": "12:00:00",
     "date_registered": "2020-12-09T18:14:35.691Z",
@@ -4121,6 +4355,26 @@
     "is_accepted_president": true,
     "room": 11,
     "requestor": 7
+  }
+},
+{
+  "model": "reservations.notification",
+  "pk": 1,
+  "fields": {
+    "user": 9,
+    "reservation": 4,
+    "is_seen": false,
+    "datetime_created": "2020-12-14T08:18:30.417Z"
+  }
+},
+{
+  "model": "reservations.notification",
+  "pk": 2,
+  "fields": {
+    "user": 9,
+    "reservation": 4,
+    "is_seen": false,
+    "datetime_created": "2020-12-14T08:19:43.161Z"
   }
 },
 {
@@ -4268,7 +4522,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$216000$z8vA4dmOyv4F$LrUCmznwRn7JhWfpWhV5yAYZ/zwhOVW5aX8uZr8YBGM=",
-    "last_login": "2020-12-09T08:12:24.083Z",
+    "last_login": "2020-12-14T08:18:09.045Z",
     "is_superuser": true,
     "email": "admin@email.com",
     "profile": null,
