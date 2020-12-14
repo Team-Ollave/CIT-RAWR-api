@@ -119,6 +119,7 @@ class RoomViewSet(
             else:
                 earliest_availability_date = date_counter
             date_counter += datetime.timedelta(days=1)
+        return Response(earliest_availability_date)
 
 
 class ReservationViewSet(
