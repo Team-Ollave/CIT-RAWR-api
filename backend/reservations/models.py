@@ -45,6 +45,10 @@ class Room(models.Model):
     def is_generic(self):
         return self.room_category is not None
 
+    @property
+    def max_hours(self):
+        return self.available_end_time - self.available_start_time
+
     def __str__(self):
         return f"{self.id} - {self.building} - {self.name}"
 
@@ -123,3 +127,7 @@ class Reservation(models.Model):
             or self.is_accepted_imdc is False
             or self.is_accepted_president is False
         )
+
+    @property
+    def event_time_length(self):
+        return self.end_time - self.start_time
