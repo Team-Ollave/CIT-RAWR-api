@@ -224,8 +224,7 @@ class NotificationViewSet(
         if user_id := serializer.validated_data.get("user_id"):
             queryset = queryset.from_user(user_id)
 
-        if self.request.query_params.get("is_seen") is not None:
-            is_seen = serializer.validated_data.get("is_seen")
+        if (is_seen := serializer.validated_data.get("is_seen")) is not None:
             queryset = queryset.is_seen(is_seen)
 
         return queryset.all()

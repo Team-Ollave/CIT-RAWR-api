@@ -151,6 +151,11 @@ class NotificationModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Notification
         fields = "__all__"
+        extra_kwargs = {
+            "datetime_created": {
+                "format": "%a %b %d, %Y | %-I:%M %p",
+            },
+        }
 
 
 class ReservationQuerySerializer(serializers.Serializer):
@@ -192,8 +197,9 @@ class RoomsQuerySerializer(serializers.Serializer):
 
 
 class NotificationQuerySerializer(serializers.Serializer):
-    user = serializers.IntegerField(required=False)
-    reservation = serializers.IntegerField(required=False)
+    user_id = serializers.IntegerField(required=False)
+    reservation_id = serializers.IntegerField(required=False)
+    is_seen = serializers.BooleanField(required=False)
 
 
 class EarliestAvailabilitySerializer(serializers.Serializer):
