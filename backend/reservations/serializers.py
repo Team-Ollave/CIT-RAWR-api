@@ -199,7 +199,7 @@ class RoomsQuerySerializer(serializers.Serializer):
 class NotificationQuerySerializer(serializers.Serializer):
     user_id = serializers.IntegerField(required=False)
     reservation_id = serializers.IntegerField(required=False)
-    is_seen = serializers.BooleanField(required=False)
+    is_seen = serializers.BooleanField(required=False, allow_null=True, default=None)
 
 
 class EarliestAvailabilitySerializer(serializers.Serializer):
