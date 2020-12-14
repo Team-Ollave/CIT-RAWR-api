@@ -118,11 +118,14 @@ class RoomViewSet(
                 .order_by("event_date", "start_time")
             )
             if room_reservations:
-                total_events_hours = reduce(
-                    lambda current, next: current.event_time_length
-                    + next.event_time_length,
-                    room_reservations,
-                )
+                if len(room_reservations) == 1:
+                    total_events_hours = room_reservations[0].event_time_length
+                else:
+                    total_events_hours = reduce(
+                        lambda current, next: current.event_time_length
+                        + next.event_time_length,
+                        room_reservations,
+                    )
                 if total_events_hours < room.max_hours:
                     earliest_availability_date = date_counter
             else:
