@@ -103,3 +103,11 @@ class ReservationQuerySet(QuerySet):
 
     def accepted_by_president(self, is_accepted_president: bool):
         return self.filter(is_accepted_president=is_accepted_president)
+
+
+class NotificationQuerySet(QuerySet):
+    def from_user(self, user_id: int):
+        return self.filter(user_id=user_id)
+
+    def is_seen(self, val: bool):
+        return self.filter(is_seen=val)

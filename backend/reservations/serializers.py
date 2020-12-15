@@ -98,7 +98,7 @@ class ReservationModelSerializer(serializers.ModelSerializer):
             if (
                 obj.is_accepted_department is True
                 and obj.is_accepted_imdc is True
-                and obj.is_accepted_department is False
+                and obj.is_accepted_president is False
             ):
                 return choices.ReservationStatus.DECLINED
 
@@ -178,11 +178,30 @@ class ReservationQuerySerializer(serializers.Serializer):
         return attrs
 
 
+class NotificationModelSerializer(serializers.ModelSerializer):
+    reservation_data = ReservationModelSerializer(source="reservation", read_only=True)
+
+    class Meta:
+        model = models.Notification
+        fields = "__all__"
+        extra_kwargs = {
+            "datetime_created": {
+                "format": "%a %b %d, %Y | %-I:%M %p",
+            },
+        }
+
+
 class RoomsQuerySerializer(serializers.Serializer):
     building_id = serializers.IntegerField(required=False)
     has_reservations = serializers.BooleanField(
         required=False, allow_null=True, default=None
     )
+
+
+class NotificationQuerySerializer(serializers.Serializer):
+    user_id = serializers.IntegerField(required=False)
+    reservation_id = serializers.IntegerField(required=False)
+    is_seen = serializers.BooleanField(required=False, allow_null=True, default=None)
 
 
 class EarliestAvailabilitySerializer(serializers.Serializer):

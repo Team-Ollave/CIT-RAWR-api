@@ -1,4 +1,5 @@
 import datetime
+from functools import reduce
 
 from rest_framework import mixins, status, viewsets
 from rest_framework.decorators import action
@@ -84,6 +85,15 @@ class RoomViewSet(
                             )
                         ).total_seconds() > RESERVATION_MAX_HOURS:
                             return Response(event_date)
+                    else:
+                        if (
+                            room_reservations[i].event_date + datetime.timedelta(days=1)
+                            != room_reservations[i + 1].event_date
+                        ):
+                            return Response(
+                                room_reservations[i].event_date
+                                + datetime.timedelta(days=1)
+                            )
                 return Response(
                     room_reservations.last().event_date + datetime.timedelta(days=1)
                 )
@@ -91,6 +101,37 @@ class RoomViewSet(
                 return Response(datetime.date.today())
         else:
             return Response(datetime.date.today())
+
+    @action(methods=["GET"], detail=True, url_path="earliest-availability-v2")
+    def earliest_availability_v2(self, request, pk):
+        try:
+            room = models.Room.objects.get(id=pk)
+        except models.Room.DoesNotExist:
+            return Response("Room does not exist", status=status.HTTP_400_BAD_REQUEST)
+        earliest_availability_date = None
+        date_counter = datetime.date.today()
+        while not earliest_availability_date:
+            room_reservations = (
+                models.Reservation.objects.from_room(pk)
+                .accepted()
+                .filter(event_date=date_counter)
+                .order_by("event_date", "start_time")
+            )
+            if room_reservations:
+                if len(room_reservations) == 1:
+                    total_events_hours = room_reservations[0].event_time_length
+                else:
+                    total_events_hours = reduce(
+                        lambda current, next: current.event_time_length
+                        + next.event_time_length,
+                        room_reservations,
+                    )
+                if total_events_hours < room.max_hours:
+                    earliest_availability_date = date_counter
+            else:
+                earliest_availability_date = date_counter
+            date_counter += datetime.timedelta(days=1)
+        return Response(earliest_availability_date)
 
 
 class ReservationViewSet(
@@ -191,3 +232,35 @@ class RoomCategoryViewSet(
 ):
     queryset = models.RoomCategory.objects
     serializer_class = serializers.RoomCategoryModelSerializer
+
+
+class NotificationViewSet(
+    mixins.CreateModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.ListModelMixin,
+    viewsets.GenericViewSet,
+):
+    queryset = models.Notification.objects
+    serializer_class = serializers.NotificationModelSerializer
+
+    def get_queryset(self):
+        serializer = serializers.NotificationQuerySerializer(
+            data=self.request.query_params
+        )
+
+        queryset = self.queryset
+        if not serializer.is_valid(raise_exception=True):
+            return queryset.all()
+
+        if user_id := serializer.validated_data.get("user_id"):
+            queryset = queryset.from_user(user_id)
+
+        if (is_seen := serializer.validated_data.get("is_seen")) is not None:
+            queryset = queryset.is_seen(is_seen)
+
+        return queryset.all()
+
+    @action(detail=False, methods=["GET"])
+    def count(self, request):
+        return Response(self.get_queryset().count())
