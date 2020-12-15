@@ -27,3 +27,6 @@
 
 #### 7. migrate django
 `python manage.py migrate`
+
+#### 8. generate dummy data
+`python manage.py loaddata bigseed.json`
